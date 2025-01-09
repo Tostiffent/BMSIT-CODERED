@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import { useState, useEffect, useCallback } from "react";
 import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import L from "leaflet";
@@ -162,8 +163,8 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="w-full h-screen relative">
-      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full -z-[1]">
+    <div className="w-full h-screen -z-[1] ">
+      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full ">
         <ChangeView center={position} />
         <CustomTileLayer />
 
@@ -177,27 +178,30 @@ const MapComponent = () => {
       </MapContainer>
 
       {/* Control Box */}
-      <Card className="absolute bottom-4 right-4 p-2 bg-white/80 backdrop-blur-sm z-99">
-        <div className="grid grid-cols-3 gap-2">
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove('up')}>
-            <ArrowUp className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove('left')}>
-            <ArrowLeft className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove('right')}>
-            <ArrowRight className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove('down')}>
-            <ArrowDown className="h-4 w-4" />
-          </Button>
-          <div></div>
-        </div>
-      </Card>
+      <Card
+  className="absolute bottom-4 right-4 p-2 z-10 bg-white/80 backdrop-blur-sm pointer-events-none"
+>
+  <div className="grid grid-cols-3 gap-2 pointer-events-auto">
+    <div></div>
+    <Button variant="outline" size="icon" onClick={() => handleMove("up")}>
+      <ArrowUp className="h-4 w-4" />
+    </Button>
+    <div></div>
+    <Button variant="outline" size="icon" onClick={() => handleMove("left")}>
+      <ArrowLeft className="h-4 w-4" />
+    </Button>
+    <div></div>
+    <Button variant="outline" size="icon" onClick={() => handleMove("right")}>
+      <ArrowRight className="h-4 w-4" />
+    </Button>
+    <div></div>
+    <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
+      <ArrowDown className="h-4 w-4" />
+    </Button>
+    <div></div>
+  </div>
+</Card>
+
     </div>
   );
 };
