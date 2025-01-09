@@ -122,6 +122,13 @@ const MapComponent = () => {
     iconAnchor: [16, 16],
   });
 
+  const CircleIcon = new L.DivIcon({
+    className: "icon",
+    html: '<div class="w-5 h-5 bg-green-500 rounded-full border border-white shadow-lg"></div>',
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+  });
+
   const generateRandomPosition = () => {
     const radius = 0.001;
     const randomLat = position[0] + (Math.random() - 0.5) * radius * 2;
@@ -204,7 +211,7 @@ const MapComponent = () => {
   };
 
   useEffect(() => {
-    websocket.current = new WebSocket("ws://localhost:8765");
+    websocket.current = new WebSocket("https://1cae-14-97-164-222.ngrok-free.app");
 
     websocket.current.onopen = () => {
       console.log("WebSocket Connected");
@@ -326,7 +333,7 @@ const MapComponent = () => {
 
         {/* Spawned circles */}
         {circles.map((circle) => (
-          <Marker key={circle.id} position={circle.position} icon={customCircleIcon} />
+          <Marker key={circle.id} position={circle.position} icon={CircleIcon} />
         ))}
       </MapContainer>
 
