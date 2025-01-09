@@ -163,8 +163,8 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="w-full h-screen -z-[1] ">
-      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full ">
+    <div className="w-full h-screen -z-[1]">
+      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full z-50">
         <ChangeView center={position} />
         <CustomTileLayer />
 
@@ -179,7 +179,7 @@ const MapComponent = () => {
 
       {/* Control Box */}
       <Card
-  className="absolute bottom-4 right-4 p-2 z-10 bg-white/80 backdrop-blur-sm pointer-events-none"
+  className="absolute bottom-4 right-4 p-2 z-50 bg-white/80 backdrop-blur-sm pointer-events-none"
 >
   <div className="grid grid-cols-3 gap-2 pointer-events-auto">
     <div></div>
