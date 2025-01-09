@@ -113,7 +113,7 @@ const MapComponent = () => {
   const [selectedCircle, setSelectedCircle] = useState<string | null>(null);
   const circleIdCounter = useRef(1);
   const websocket = useRef<WebSocket | null>(null);
-  const [vehicles, setVehicles] = useState<VehiclePosition[]>([]);
+  const [vehicles, setVehicles] = useState<VehiclePosition[]>([{id: "1", position: [17.132742830091999, 77.56889104945668], timestamp: "2021-10-01T12:00:00Z"}]);
 
   const customCircleIcon = new L.DivIcon({
     className: "custom-icon",
@@ -211,7 +211,7 @@ const MapComponent = () => {
   };
 
   useEffect(() => {
-    websocket.current = new WebSocket("https://1cae-14-97-164-222.ngrok-free.app");
+    websocket.current = new WebSocket("https://2137-119-226-236-129.ngrok-free.app/");
 
     websocket.current.onopen = () => {
       console.log("WebSocket Connected");
@@ -225,9 +225,8 @@ const MapComponent = () => {
 
     websocket.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
-      console.log("Received WebSocket message:", data);
-      console.log(data);
-      if (data.type === "initial_state" || data.type === "position_update") {
+      console.log("Received WebSocket message:", data.id);
+      if (data.type === "initial_state" || data.type === "position_update" || data.id) {
         // Update vehicles state with the new positions
         if (Array.isArray(data.data)) {
           setVehicles(
@@ -236,17 +235,19 @@ const MapComponent = () => {
               position: vehicle.position,
               timestamp: vehicle.timestamp,
             }))
-          );
+          )
         } else if (data.id && data.position) {
+          console.log("Received WebSocket message:", data);
           // Single vehicle update
           setVehicles((prev) => {
             const newVehicles = prev.filter((v) => v.id !== data.id);
+            console.log("new vehicles:", newVehicles);
             return [
               ...newVehicles,
               {
                 id: data.id,
                 position: data.position,
-                timestamp: data.timestamp,
+                timestamp: "2021-10-01T12:00:00Z",
               },
             ];
           });
@@ -320,7 +321,7 @@ const MapComponent = () => {
         zoomDelta={0.17}
         className="w-full h-full z-50"
       >
-        <ChangeView center={position} />
+        {/* <ChangeView center={position} /> */}
         <CustomTileLayer />
 
         {/* Main marker */}
