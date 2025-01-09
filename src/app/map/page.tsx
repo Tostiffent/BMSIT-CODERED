@@ -6,7 +6,14 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Plus, Trash, Navigation } from "lucide-react";
 
 // Custom tile layer for scaling local tiles
 class LocalTileLayer extends L.TileLayer {
@@ -94,9 +101,17 @@ function CustomTileLayer() {
   return null;
 }
 
+interface Circle {
+  id: number;
+  position: [number, number];
+  name: string;
+}
+
 const MapComponent = () => {
-  const [position, setPosition] = useState([13.132742830091999, 77.56889104945668]);
-  const [vehicles, setVehicles] = useState(new Map());
+  const [position, setPosition] = useState<[number, number]>([13.132742830091999, 77.56889104945668]);
+  const [circles, setCircles] = useState<Circle[]>([]);
+  const [selectedCircle, setSelectedCircle] = useState<string | null>(null);
+  const circleIdCounter = useRef(1);
 
   const customCircleIcon = new L.DivIcon({
     className: "custom-icon",
@@ -104,6 +119,39 @@ const MapComponent = () => {
     iconSize: [32, 32],
     iconAnchor: [16, 16],
   });
+
+  const generateRandomPosition = () => {
+    const radius = 0.001;
+    const randomLat = position[0] + (Math.random() - 0.5) * radius * 2;
+    const randomLng = position[1] + (Math.random() - 0.5) * radius * 2;
+    return [randomLat, randomLng] as [number, number];
+  };
+
+  const spawnNewCircle = () => {
+    const newCircle: Circle = {
+      id: circleIdCounter.current,
+      position: generateRandomPosition(),
+      name: `Circle ${circleIdCounter.current}`
+    };
+    setCircles(prevCircles => [...prevCircles, newCircle]);
+    circleIdCounter.current += 1;
+  };
+
+  const deleteSelectedCircle = () => {
+    if (selectedCircle) {
+      setCircles(prevCircles => prevCircles.filter(circle => circle.id.toString() !== selectedCircle));
+      setSelectedCircle(null);
+    }
+  };
+
+  const teleportToSelectedCircle = () => {
+    if (selectedCircle) {
+      const circle = circles.find(c => c.id.toString() === selectedCircle);
+      if (circle) {
+        setPosition(circle.position);
+      }
+    }
+  };
 
   // Handle position updates with smooth animation
   const handleMove = (direction: string) => {
@@ -135,7 +183,7 @@ const MapComponent = () => {
   
       const animateMovement = (timestamp: number) => {
         const elapsedTime = timestamp - startTime;
-        const progress = Math.min(elapsedTime / duration, 1); // Normalize progress to [0, 1]
+        const progress = Math.min(elapsedTime / duration, 1);
   
         const interpolatedLat = currentLat + progress * (targetLat - currentLat);
         const interpolatedLng = currentLng + progress * (targetLng - currentLng);
@@ -149,7 +197,6 @@ const MapComponent = () => {
   
       requestAnimationFrame(animateMovement);
   
-      // Return current position initially; it will be updated during animation
       return [currentLat, currentLng];
     });
   };
@@ -159,8 +206,8 @@ const MapComponent = () => {
     let movementInterval: NodeJS.Timeout | null = null;
 
     const startMoving = (direction: string) => {
-      if (movementInterval) return; // Prevent multiple intervals
-      movementInterval = setInterval(() => handleMove(direction), 50); // Adjust interval duration as needed
+      if (movementInterval) return;
+      movementInterval = setInterval(() => handleMove(direction), 50);
     };
 
     const stopMoving = () => {
@@ -199,7 +246,7 @@ const MapComponent = () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
     };
-  }, [handleMove]);
+  }, []);
 
   return (
     <div className="w-full h-screen -z-[1]">
@@ -210,32 +257,89 @@ const MapComponent = () => {
         {/* Main marker */}
         <Marker position={position} icon={customCircleIcon} />
 
-        {/* Vehicle markers */}
-        {Array.from(vehicles.values()).map((vehicle) => (
-          <Marker key={vehicle.id} position={vehicle.position} icon={customCircleIcon} />
+        {/* Spawned circles */}
+        {circles.map((circle) => (
+          <Marker 
+            key={circle.id} 
+            position={circle.position} 
+            icon={customCircleIcon}
+          />
         ))}
       </MapContainer>
 
       {/* Control Box */}
-      <Card className="absolute bottom-4 right-4 p-2 z-50 bg-white/80 backdrop-blur-sm pointer-events-none">
-        <div className="grid grid-cols-3 gap-2 pointer-events-auto">
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove("up")}>
-            <ArrowUp className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove("left")}>
-            <ArrowLeft className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove("right")}>
-            <ArrowRight className="h-4 w-4" />
-          </Button>
-          <div></div>
-          <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
-            <ArrowDown className="h-4 w-4" />
-          </Button>
-          <div></div>
+      <Card className="absolute bottom-4 right-4 p-2 z-50 bg-white/80 backdrop-blur-sm">
+        <div className="space-y-4">
+          {/* Movement controls */}
+          <div className="grid grid-cols-3 gap-2 pointer-events-auto">
+            <div></div>
+            <Button variant="outline" size="icon" onClick={() => handleMove("up")}>
+              <ArrowUp className="h-4 w-4" />
+            </Button>
+            <div></div>
+            <Button variant="outline" size="icon" onClick={() => handleMove("left")}>
+              <ArrowLeft className="h-4 w-4" />
+            </Button>
+            <div></div>
+            <Button variant="outline" size="icon" onClick={() => handleMove("right")}>
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+            <div></div>
+            <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
+              <ArrowDown className="h-4 w-4"/>
+            </Button>
+            <div></div>
+          </div>
+
+          {/* Spawn button and circle controls */}
+          <div className="space-y-2">
+            <Button 
+              variant="outline" 
+              onClick={spawnNewCircle}
+              className="w-full flex items-center gap-2"
+            >
+              <Plus className="h-4 w-4" />
+              Spawn Circle
+            </Button>
+
+            <Select
+              value={selectedCircle}
+              onValueChange={setSelectedCircle}
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Select a circle" />
+              </SelectTrigger>
+              <SelectContent>
+                {circles.map((circle) => (
+                  <SelectItem key={circle.id} value={circle.id.toString()}>
+                    {circle.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Circle action buttons */}
+            <div className="flex gap-2">
+              <Button 
+                variant="outline" 
+                onClick={deleteSelectedCircle}
+                className="flex-1 flex items-center gap-2"
+                disabled={!selectedCircle}
+              >
+                <Trash className="h-4 w-4" />
+                Delete
+              </Button>
+              <Button 
+                variant="outline" 
+                onClick={teleportToSelectedCircle}
+                className="flex-1 flex items-center gap-2"
+                disabled={!selectedCircle}
+              >
+                <Navigation className="h-4 w-4" />
+                Teleport
+              </Button>
+            </div>
+          </div>
         </div>
       </Card>
     </div>
