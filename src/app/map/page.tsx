@@ -6,16 +6,15 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
 
-// Custom tile layer that handles local tiles with proper scaling
+// Custom tile layer for scaling local tiles
 class LocalTileLayer extends L.TileLayer {
   getTileUrl(coords: any) {
     const maxNativeZoom = 19;
     if (coords.z <= maxNativeZoom) {
       return `/bangalore_tiles/${coords.z}/${coords.x}/${coords.y}.png`;
     }
-
     const zoomDiff = coords.z - maxNativeZoom;
     const scale = Math.pow(2, zoomDiff);
     const x = Math.floor(coords.x / scale);
@@ -77,7 +76,7 @@ function CustomTileLayer() {
     localTileLayer.addTo(map);
 
     const style = document.createElement("style");
-    style.textContent = `
+    style.textContent = ` 
       .leaflet-tile {
         border: none !important;
         margin: 0 !important;
@@ -106,61 +105,101 @@ const MapComponent = () => {
     iconAnchor: [16, 16],
   });
 
-  // WebSocket connection setup
-  useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8765");
+  // Handle position updates with smooth animation
+  const handleMove = (direction: string) => {
+    const step = 0.0001; // Adjust step size for movement
+    const duration = 200; // Animation duration in milliseconds
+  
+    setPosition(([currentLat, currentLng]) => {
+      let targetLat = currentLat;
+      let targetLng = currentLng;
+  
+      switch (direction) {
+        case "up":
+          targetLat += step;
+          break;
+        case "down":
+          targetLat -= step;
+          break;
+        case "left":
+          targetLng -= step;
+          break;
+        case "right":
+          targetLng += step;
+          break;
+        default:
+          break;
+      }
+  
+      const startTime = performance.now();
+  
+      const animateMovement = (timestamp: number) => {
+        const elapsedTime = timestamp - startTime;
+        const progress = Math.min(elapsedTime / duration, 1); // Normalize progress to [0, 1]
+  
+        const interpolatedLat = currentLat + progress * (targetLat - currentLat);
+        const interpolatedLng = currentLng + progress * (targetLng - currentLng);
+  
+        setPosition([interpolatedLat, interpolatedLng]);
+  
+        if (progress < 1) {
+          requestAnimationFrame(animateMovement);
+        }
+      };
+  
+      requestAnimationFrame(animateMovement);
+  
+      // Return current position initially; it will be updated during animation
+      return [currentLat, currentLng];
+    });
+  };
 
-    ws.onopen = () => {
-      console.log("Connected to WebSocket server");
-      ws.send(JSON.stringify({ type: "request_positions" }));
+  // Continuous movement for holding down W, A, S, D
+  useEffect(() => {
+    let movementInterval: NodeJS.Timeout | null = null;
+
+    const startMoving = (direction: string) => {
+      if (movementInterval) return; // Prevent multiple intervals
+      movementInterval = setInterval(() => handleMove(direction), 50); // Adjust interval duration as needed
     };
 
-    ws.onmessage = (event) => {
-      try {
-        const message = JSON.parse(event.data);
-        console.log(message);
-        switch (message.type) {
-          case "initial_state":
-          case "position_update":
-            handlePositionUpdates(message.data);
-            break;
-          default:
-            console.warn("Unknown message type:", message.type);
-        }
-      } catch (error) {
-        console.error("Error processing message:", error);
+    const stopMoving = () => {
+      if (movementInterval) {
+        clearInterval(movementInterval);
+        movementInterval = null;
       }
     };
 
-    ws.onclose = () => {
-      console.log("Disconnected from WebSocket server");
+    const handleKeyDown = (event: KeyboardEvent) => {
+      switch (event.key.toLowerCase()) {
+        case "w":
+          startMoving("up");
+          break;
+        case "a":
+          startMoving("left");
+          break;
+        case "s":
+          startMoving("down");
+          break;
+        case "d":
+          startMoving("right");
+          break;
+      }
     };
 
-    ws.onerror = (error) => {
-      console.error("WebSocket error:", error);
+    const handleKeyUp = () => {
+      stopMoving();
     };
+
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
 
     return () => {
-      ws.close();
+      stopMoving();
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
     };
-  }, []);
-
-  const handlePositionUpdates = useCallback((data: any) => {
-    if (Array.isArray(data)) {
-      const newVehicles = new Map();
-      data.forEach((vehicle) => {
-        newVehicles.set(vehicle.id, vehicle);
-      });
-      setVehicles(newVehicles);
-    } else {
-      setVehicles((prev) => new Map(prev).set(data.id, data));
-    }
-  }, []);
-
-  const handleMove = (direction: string) => {
-    // Implement the logic to move the map based on the direction
-    console.log(`Moving ${direction}`);
-  };
+  }, [handleMove]);
 
   return (
     <div className="w-full h-screen -z-[1]">
@@ -178,33 +217,29 @@ const MapComponent = () => {
       </MapContainer>
 
       {/* Control Box */}
-      <Card
-  className="absolute bottom-4 right-4 p-2 z-50 bg-white/80 backdrop-blur-sm pointer-events-none"
->
-  <div className="grid grid-cols-3 gap-2 pointer-events-auto">
-    <div></div>
-    <Button variant="outline" size="icon" onClick={() => handleMove("up")}>
-      <ArrowUp className="h-4 w-4" />
-    </Button>
-    <div></div>
-    <Button variant="outline" size="icon" onClick={() => handleMove("left")}>
-      <ArrowLeft className="h-4 w-4" />
-    </Button>
-    <div></div>
-    <Button variant="outline" size="icon" onClick={() => handleMove("right")}>
-      <ArrowRight className="h-4 w-4" />
-    </Button>
-    <div></div>
-    <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
-      <ArrowDown className="h-4 w-4" />
-    </Button>
-    <div></div>
-  </div>
-</Card>
-
+      <Card className="absolute bottom-4 right-4 p-2 z-50 bg-white/80 backdrop-blur-sm pointer-events-none">
+        <div className="grid grid-cols-3 gap-2 pointer-events-auto">
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove("up")}>
+            <ArrowUp className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove("left")}>
+            <ArrowLeft className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove("right")}>
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
+            <ArrowDown className="h-4 w-4" />
+          </Button>
+          <div></div>
+        </div>
+      </Card>
     </div>
   );
 };
 
 export default MapComponent;
-
