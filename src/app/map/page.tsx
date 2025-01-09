@@ -6,13 +6,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Plus, Trash, Navigation } from "lucide-react";
 
 // Custom tile layer for scaling local tiles
@@ -107,11 +101,19 @@ interface Circle {
   name: string;
 }
 
+interface VehiclePosition {
+  id: string | number;
+  position: [number, number];
+  timestamp: string;
+}
+
 const MapComponent = () => {
   const [position, setPosition] = useState<[number, number]>([13.132742830091999, 77.56889104945668]);
   const [circles, setCircles] = useState<Circle[]>([]);
   const [selectedCircle, setSelectedCircle] = useState<string | null>(null);
   const circleIdCounter = useRef(1);
+  const websocket = useRef<WebSocket | null>(null);
+  const [vehicles, setVehicles] = useState<VehiclePosition[]>([]);
 
   const customCircleIcon = new L.DivIcon({
     className: "custom-icon",
@@ -131,22 +133,22 @@ const MapComponent = () => {
     const newCircle: Circle = {
       id: circleIdCounter.current,
       position: generateRandomPosition(),
-      name: `Circle ${circleIdCounter.current}`
+      name: `Circle ${circleIdCounter.current}`,
     };
-    setCircles(prevCircles => [...prevCircles, newCircle]);
+    setCircles((prevCircles) => [...prevCircles, newCircle]);
     circleIdCounter.current += 1;
   };
 
   const deleteSelectedCircle = () => {
     if (selectedCircle) {
-      setCircles(prevCircles => prevCircles.filter(circle => circle.id.toString() !== selectedCircle));
+      setCircles((prevCircles) => prevCircles.filter((circle) => circle.id.toString() !== selectedCircle));
       setSelectedCircle(null);
     }
   };
 
   const teleportToSelectedCircle = () => {
     if (selectedCircle) {
-      const circle = circles.find(c => c.id.toString() === selectedCircle);
+      const circle = circles.find((c) => c.id.toString() === selectedCircle);
       if (circle) {
         setPosition(circle.position);
       }
@@ -157,11 +159,11 @@ const MapComponent = () => {
   const handleMove = (direction: string) => {
     const step = 0.0001; // Adjust step size for movement
     const duration = 200; // Animation duration in milliseconds
-  
+
     setPosition(([currentLat, currentLng]) => {
       let targetLat = currentLat;
       let targetLng = currentLng;
-  
+
       switch (direction) {
         case "up":
           targetLat += step;
@@ -178,28 +180,81 @@ const MapComponent = () => {
         default:
           break;
       }
-  
+
       const startTime = performance.now();
-  
+
       const animateMovement = (timestamp: number) => {
         const elapsedTime = timestamp - startTime;
         const progress = Math.min(elapsedTime / duration, 1);
-  
+
         const interpolatedLat = currentLat + progress * (targetLat - currentLat);
         const interpolatedLng = currentLng + progress * (targetLng - currentLng);
-  
+
         setPosition([interpolatedLat, interpolatedLng]);
-  
+
         if (progress < 1) {
           requestAnimationFrame(animateMovement);
         }
       };
-  
+
       requestAnimationFrame(animateMovement);
-  
+
       return [currentLat, currentLng];
     });
   };
+
+  useEffect(() => {
+    websocket.current = new WebSocket("ws://localhost:8765");
+
+    websocket.current.onopen = () => {
+      console.log("WebSocket Connected");
+      // Request initial positions
+      websocket.current?.send(
+        JSON.stringify({
+          type: "request_positions",
+        })
+      );
+    };
+
+    websocket.current.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      console.log("Received WebSocket message:", data);
+      console.log(data);
+      if (data.type === "initial_state" || data.type === "position_update") {
+        // Update vehicles state with the new positions
+        if (Array.isArray(data.data)) {
+          setVehicles(
+            data.data.map((vehicle: any) => ({
+              id: vehicle.id,
+              position: vehicle.position,
+              timestamp: vehicle.timestamp,
+            }))
+          );
+        } else if (data.id && data.position) {
+          // Single vehicle update
+          setVehicles((prev) => {
+            const newVehicles = prev.filter((v) => v.id !== data.id);
+            return [
+              ...newVehicles,
+              {
+                id: data.id,
+                position: data.position,
+                timestamp: data.timestamp,
+              },
+            ];
+          });
+        }
+      }
+    };
+
+    websocket.current.onclose = () => {
+      console.log("WebSocket Disconnected");
+    };
+
+    return () => {
+      websocket.current?.close();
+    };
+  }, []);
 
   // Continuous movement for holding down W, A, S, D
   useEffect(() => {
@@ -250,20 +305,28 @@ const MapComponent = () => {
 
   return (
     <div className="w-full h-screen -z-[1]">
-      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full z-50">
+      <MapContainer
+        center={position}
+        zoom={19}
+        maxZoom={22}
+        zoomSnap={0.17}
+        zoomDelta={0.17}
+        className="w-full h-full z-50"
+      >
         <ChangeView center={position} />
         <CustomTileLayer />
 
         {/* Main marker */}
         <Marker position={position} icon={customCircleIcon} />
 
+        {/* Vehicle markers from WebSocket */}
+        {vehicles.map((vehicle) => (
+          <Marker key={vehicle.id} position={vehicle.position} icon={customCircleIcon}></Marker>
+        ))}
+
         {/* Spawned circles */}
         {circles.map((circle) => (
-          <Marker 
-            key={circle.id} 
-            position={circle.position} 
-            icon={customCircleIcon}
-          />
+          <Marker key={circle.id} position={circle.position} icon={customCircleIcon} />
         ))}
       </MapContainer>
 
@@ -286,26 +349,19 @@ const MapComponent = () => {
             </Button>
             <div></div>
             <Button variant="outline" size="icon" onClick={() => handleMove("down")}>
-              <ArrowDown className="h-4 w-4"/>
+              <ArrowDown className="h-4 w-4" />
             </Button>
             <div></div>
           </div>
 
           {/* Spawn button and circle controls */}
           <div className="space-y-2">
-            <Button 
-              variant="outline" 
-              onClick={spawnNewCircle}
-              className="w-full flex items-center gap-2"
-            >
+            <Button variant="outline" onClick={spawnNewCircle} className="w-full flex items-center gap-2">
               <Plus className="h-4 w-4" />
               Spawn Circle
             </Button>
 
-            <Select
-              value={selectedCircle}
-              onValueChange={setSelectedCircle}
-            >
+            <Select value={selectedCircle} onValueChange={setSelectedCircle}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a circle" />
               </SelectTrigger>
@@ -320,8 +376,8 @@ const MapComponent = () => {
 
             {/* Circle action buttons */}
             <div className="flex gap-2">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={deleteSelectedCircle}
                 className="flex-1 flex items-center gap-2"
                 disabled={!selectedCircle}
@@ -329,8 +385,8 @@ const MapComponent = () => {
                 <Trash className="h-4 w-4" />
                 Delete
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={teleportToSelectedCircle}
                 className="flex-1 flex items-center gap-2"
                 disabled={!selectedCircle}
