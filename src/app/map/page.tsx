@@ -60,7 +60,7 @@ function CustomTileLayer() {
 
   useEffect(() => {
     const localTileLayer = new LocalTileLayer("", {
-      minZoom: 10,
+      minZoom: 19,
       maxZoom: 22,
       maxNativeZoom: 19,
       tileSize: 256,
@@ -92,14 +92,12 @@ function CustomTileLayer() {
 }
 
 const MapComponent = () => {
-  const [position, setPosition] = useState([
-    13.132742830091999, 77.56889104945668,
-  ]);
+  const [position, setPosition] = useState([13.132742830091999, 77.56889104945668]);
   const [vehicles, setVehicles] = useState(new Map());
 
   const customCircleIcon = new L.DivIcon({
     className: "custom-icon",
-    html: '<div class="w-8 h-8 bg-blue-500 rounded-full border border-white shadow-lg"></div>',
+    html: '<div class="w-5 h-5 bg-blue-500 rounded-full border border-white shadow-lg"></div>',
     iconSize: [32, 32],
     iconAnchor: [16, 16],
   });
@@ -116,7 +114,7 @@ const MapComponent = () => {
     ws.onmessage = (event) => {
       try {
         const message = JSON.parse(event.data);
-
+        console.log(message);
         switch (message.type) {
           case "initial_state":
           case "position_update":
@@ -157,14 +155,7 @@ const MapComponent = () => {
 
   return (
     <div className="w-full h-screen relative">
-      <MapContainer
-        center={position}
-        zoom={21}
-        maxZoom={22}
-        zoomSnap={0.17}
-        zoomDelta={0.17}
-        className="w-full h-full"
-      >
+      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full">
         <ChangeView center={position} />
         <CustomTileLayer />
 
@@ -173,11 +164,7 @@ const MapComponent = () => {
 
         {/* Vehicle markers */}
         {Array.from(vehicles.values()).map((vehicle) => (
-          <Marker
-            key={vehicle.id}
-            position={vehicle.position}
-            icon={customCircleIcon}
-          />
+          <Marker key={vehicle.id} position={vehicle.position} icon={customCircleIcon} />
         ))}
       </MapContainer>
     </div>
