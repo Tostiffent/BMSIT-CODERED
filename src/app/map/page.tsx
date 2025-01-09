@@ -361,7 +361,10 @@ const MapComponent = () => {
               Spawn Circle
             </Button>
 
-            <Select value={selectedCircle} onValueChange={setSelectedCircle}>
+            <Select
+              value={selectedCircle ? selectedCircle : ""}
+              onValueChange={setSelectedCircle}
+            >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a circle" />
               </SelectTrigger>
