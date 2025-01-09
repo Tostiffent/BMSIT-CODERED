@@ -3,6 +3,9 @@ import { useState, useEffect, useCallback } from "react";
 import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight } from 'lucide-react';
 
 // Custom tile layer that handles local tiles with proper scaling
 class LocalTileLayer extends L.TileLayer {
@@ -153,9 +156,14 @@ const MapComponent = () => {
     }
   }, []);
 
+  const handleMove = (direction: string) => {
+    // Implement the logic to move the map based on the direction
+    console.log(`Moving ${direction}`);
+  };
+
   return (
     <div className="w-full h-screen relative">
-      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full">
+      <MapContainer center={position} zoom={19} maxZoom={22} zoomSnap={0.17} zoomDelta={0.17} className="w-full h-full -z-[1]">
         <ChangeView center={position} />
         <CustomTileLayer />
 
@@ -167,8 +175,32 @@ const MapComponent = () => {
           <Marker key={vehicle.id} position={vehicle.position} icon={customCircleIcon} />
         ))}
       </MapContainer>
+
+      {/* Control Box */}
+      <Card className="absolute bottom-4 right-4 p-2 bg-white/80 backdrop-blur-sm z-99">
+        <div className="grid grid-cols-3 gap-2">
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove('up')}>
+            <ArrowUp className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove('left')}>
+            <ArrowLeft className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove('right')}>
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button variant="outline" size="icon" onClick={() => handleMove('down')}>
+            <ArrowDown className="h-4 w-4" />
+          </Button>
+          <div></div>
+        </div>
+      </Card>
     </div>
   );
 };
 
 export default MapComponent;
+
