@@ -24,39 +24,25 @@ class WaypointManager:
     def __init__(self):
         # Define paths for each vehicle
         self.vehicle_paths = {
-            1: [
-                [13.135379905537818, 77.56909605703297]
-            ],
-            2: [
-                [13.135225253691889, 77.56916901851365],
-                [13.130204, 77.571351],
-                [13.130326, 77.571583],
-                [13.130471, 77.571223],
-                [13.135225253691889, 77.56916901851365]
-            ],
-            3: [
-                [13.135387669683919, 77.56871515177139],
-                [13.135252, 77.569146],
-                [13.135252, 77.569255],
-                [13.134599, 77.569498],
-                [13.134114, 77.572075],
-                [13.131497, 77.571457],
-                [13.131563, 77.571021],
-                [13.131164, 77.570862],
-                [13.130209, 77.571360],
-                [13.130153, 77.571248],
-                [13.135252, 77.569107]
-            ],
-            4: [
-                [13.134432963671776, 77.56952104490269],
-                [13.135415, 77.569070],
-                [13.134432, 77.569130],
-                [13.133922, 77.569039],
-                [13.134077, 77.569501]
-            ],
-            5: [
-                [13.134557599098008, 77.56946376046962]
-            ]
+        1: [  [13.134407425677608, 77.56936729614509],
+             [13.134712359236607, 77.56928129352693],
+  [13.135379905537818, 77.56909605703297],
+  [13.135720344886774, 77.56903608418777],
+  [13.136969580560471, 77.56882743871692]],
+
+#SBT rd L to R
+        2: [  [13.135633790624643, 77.56791730038407],
+  [13.135225253691889, 77.56916901851365],[13.135324244443483, 77.56927602647927],
+  [13.135232836558117, 77.56982893697713]],
+
+#SBT rd Down to Up
+        3:  [[13.134933169146414, 77.56856909994178],[13.135387669683919, 77.56871515177139],[13.135649249982482, 77.56787549375606],[13.136497309284797, 77.5680450182011]],
+
+#Dodd rd up
+        4:  [[13.135669510376736, 77.56915069919188],[13.134432963671776, 77.56952104490269],[13.130322109485707, 77.57129252313044]],
+
+#R to L towards Dbd rd up
+        5:  [[13.134405252127834, 77.5703374633789],[13.134432963671776, 77.56952104490269],[13.134557599098008, 77.56946376046962]]
         }
         
         # Keep track of current position index for each vehicle
@@ -222,18 +208,18 @@ class MapWebSocketSim:
     
     
     async def start_server(self):
-        ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-        ssl_context.load_cert_chain('server.crt', 'server.key')
+        # ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        # ssl_context.load_cert_chain('server.crt', 'server.key')
 
         """Start the WebSocket server and wait for clients."""
-        async with websockets.serve(self.handler, self.host, self.port, ssl=ssl_context):
+        async with websockets.serve(self.handler, self.host, self.port):
             logger.info(f"WebSocket server started on wss://{self.host}:{self.port}")
             await asyncio.Future()  # Keep the server running
 
 # Example usage
 if __name__ == "__main__":
     # Create and start the server
-    server = MapWebSocketSim(port=8766)
+    server = MapWebSocketSim(port=8765)
     
     # Run the server
     try:
