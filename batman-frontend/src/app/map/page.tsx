@@ -368,7 +368,7 @@ const MapComponent = () => {
   };
 
   useEffect(() => {
-    websocket.current = new WebSocket("http://localhost:8765");
+    websocket.current = new WebSocket("wss://localhost:8765");
 
     websocket.current.onopen = () => {
       console.log("WebSocket Connected");

@@ -2,9 +2,12 @@ import asyncio
 import json
 import websockets
 import logging
+from broadcast import Broadcast
 from datetime import datetime
 from typing import Set, Dict
 import random
+import ssl
+
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
@@ -13,6 +16,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # In the MapWebSocketSim class, modify the periodic_update method:
+
+bdct_client = Broadcast()
 
 # Update the WaypointManager class:
 class WaypointManager:
@@ -136,6 +141,13 @@ class MapWebSocketSim:
             await asyncio.gather(
                 *[client.send(json.dumps(message)) for client in self.connected_clients]
             )
+        
+        # Broadcasting to mesh network
+        id = message["id"]
+        lat = message["position"][0]
+        long = message["position"][1]
+
+        bdct_client.txBroadcast(json.dumps({"id": id, "lat": lat, "long": long}))
     
     async def update_vehicle_position(self, vehicle_id: str, latitude: float, longitude: float):
         """Update vehicle position and broadcast to clients"""
@@ -210,15 +222,18 @@ class MapWebSocketSim:
     
     
     async def start_server(self):
+        ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        ssl_context.load_cert_chain('server.crt', 'server.key')
+
         """Start the WebSocket server and wait for clients."""
-        async with websockets.serve(self.handler, self.host, self.port):
-            logger.info(f"WebSocket server started on ws://{self.host}:{self.port}")
+        async with websockets.serve(self.handler, self.host, self.port, ssl=ssl_context):
+            logger.info(f"WebSocket server started on wss://{self.host}:{self.port}")
             await asyncio.Future()  # Keep the server running
 
 # Example usage
 if __name__ == "__main__":
     # Create and start the server
-    server = MapWebSocketSim()
+    server = MapWebSocketSim(port=8766)
     
     # Run the server
     try:

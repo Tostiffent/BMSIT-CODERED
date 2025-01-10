@@ -2,8 +2,12 @@ import asyncio
 import json
 import websockets
 import logging
+import ssl
+import threading
+from broadcast import Broadcast
 from datetime import datetime
 from typing import Set, Dict
+
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
@@ -11,13 +15,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-async def fetch_vehicle_positions():
-    """Simulate fetching vehicle positions from an external source."""
-    return {
-        "car1": (13.134104638498696, 77.56917072648946),
-        "car2": (13.131337084484583, 77.56861137245265),
-    }
+vehicle_positions = {}
 
+async def recv_broadcasts_bg():
+    bdct = Broadcast()
+
+    while True:
+        data, addr = bdct.rxBroadcast(); 
+        if data != -1:
+            parsed_data = json.loads(data)
+            v_id = parsed_data.get("id")
+            if v_id or addr:
+                lat = parsed_data.get("lat")
+                long = parsed_data.get("long")
+                vehicle_positions[v_id or addr] = (lat, long) 
 
 class MapWebSocketServer:
     def __init__(self, host: str = "localhost", port: int = 8765):
@@ -107,8 +118,7 @@ class MapWebSocketServer:
         while True:
             try:
                 # Fetch new vehicle positions
-                positions = await fetch_vehicle_positions()
-                for vehicle_id, (latitude, longitude) in positions.items():
+                for vehicle_id, (latitude, longitude) in vehicle_positions.items():
                     # Update vehicle positions
                     await self.update_vehicle_position(vehicle_id, latitude, longitude)
             except Exception as e:
@@ -117,17 +127,25 @@ class MapWebSocketServer:
             await asyncio.sleep(1)
     
     async def start_server(self):
+        ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        ssl_context.load_cert_chain('server.crt', 'server.key')
+
         """Start the WebSocket server with periodic updates."""
         asyncio.create_task(self.periodic_update())  # Schedule the periodic update
-        async with websockets.serve(self.handler, self.host, self.port):
-            logger.info(f"WebSocket server started on ws://{self.host}:{self.port}")
+
+        async with websockets.serve(self.handler, self.host, self.port, ssl=ssl_context):
+            logger.info(f"WebSocket server started on wss://{self.host}:{self.port}")
             await asyncio.Future()
 
 # Example usage
 if __name__ == "__main__":
     # Create and start the server
     server = MapWebSocketServer()
-    
+
+    # Start the broadcast receiver in a separate thread
+    broadcast_thread = threading.Thread(target=recv_broadcasts_bg)
+    broadcast_thread.start()
+
     # Run the server
     try:
         asyncio.run(server.start_server())
