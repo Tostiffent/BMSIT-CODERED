@@ -12,6 +12,71 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { X } from "lucide-react";
 // Custom tile layer for scaling local tiles
 
+const doLineSegmentsIntersect = (
+  start1: [number, number],
+  end1: [number, number],
+  start2: [number, number],
+  end2: [number, number]
+) => {
+  const ccw = (A: [number, number], B: [number, number], C: [number, number]) => {
+    return (C[1] - A[1]) * (B[0] - A[0]) > (B[1] - A[1]) * (C[0] - A[0]);
+  };
+
+  return ccw(start1, start2, end2) !== ccw(end1, start2, end2) && ccw(start1, end1, start2) !== ccw(start1, end1, end2);
+};
+
+const AnimatedVehicleMarker = ({ vehicle, icon, onIntersection }) => {
+  const [currentPosition, setCurrentPosition] = useState(vehicle.position);
+  const animationRef = useRef(null);
+  const startTimeRef = useRef(null);
+  const startPositionRef = useRef(vehicle.position);
+
+  useEffect(() => {
+    if (startPositionRef.current === vehicle.position) return;
+
+    if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current);
+    }
+
+    const startPosition = currentPosition;
+    const targetPosition = vehicle.position;
+    startPositionRef.current = startPosition;
+    startTimeRef.current = performance.now();
+
+    const animationDuration = 6000; // Match server update interval
+
+    const animate = (currentTime) => {
+      const elapsed = currentTime - startTimeRef.current;
+      const progress = Math.min(elapsed / animationDuration, 1);
+
+      const easeProgress = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+      const newLat = startPosition[0] + (targetPosition[0] - startPosition[0]) * easeProgress;
+      const newLng = startPosition[1] + (targetPosition[1] - startPosition[1]) * easeProgress;
+
+      const newPosition = [newLat, newLng];
+      setCurrentPosition(newPosition);
+
+      // Check intersections with other vehicles
+      onIntersection(vehicle.id, startPosition, newPosition);
+
+      if (progress < 1) {
+        animationRef.current = requestAnimationFrame(animate);
+      }
+    };
+
+    animationRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [vehicle.position]);
+
+  return <Marker position={currentPosition} icon={icon} zIndexOffset={1000} />;
+};
+
 function MapClickHandler() {
   const map = useMapEvents({
     click: (e) => {
@@ -119,58 +184,12 @@ function CustomTileLayer() {
   return null;
 }
 
-const AnimatedVehicleMarker = ({ vehicle, icon }) => {
-  const [currentPosition, setCurrentPosition] = useState(vehicle.position);
-  const animationRef = useRef(null);
-  const startTimeRef = useRef(null);
-  const startPositionRef = useRef(vehicle.position);
+interface ProximityAlertProps {
+  message: string;
+  onDismiss: () => void;
+}
 
-  useEffect(() => {
-    // Don't animate on first render
-    if (startPositionRef.current === vehicle.position) return;
-
-    // Cancel any ongoing animation
-    if (animationRef.current) {
-      cancelAnimationFrame(animationRef.current);
-    }
-
-    const startPosition = currentPosition;
-    const targetPosition = vehicle.position;
-    startPositionRef.current = startPosition;
-    startTimeRef.current = performance.now();
-
-    const animationDuration = 6000; // 6 seconds to match the server update interval
-
-    const animate = (currentTime) => {
-      const elapsed = currentTime - startTimeRef.current;
-      const progress = Math.min(elapsed / animationDuration, 1);
-
-      // Ease in-out function for smoother animation
-      const easeProgress = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-
-      const newLat = startPosition[0] + (targetPosition[0] - startPosition[0]) * easeProgress;
-      const newLng = startPosition[1] + (targetPosition[1] - startPosition[1]) * easeProgress;
-
-      setCurrentPosition([newLat, newLng]);
-
-      if (progress < 1) {
-        animationRef.current = requestAnimationFrame(animate);
-      }
-    };
-
-    animationRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [vehicle.position]); // React to position changes
-
-  return <Marker position={currentPosition} icon={icon} zIndexOffset={1000} />;
-};
-
-const ProximityAlert = ({ message, onDismiss }) => {
+const ProximityAlert = ({ message, onDismiss }: ProximityAlertProps) => {
   return (
     <Alert className="mb-2 pr-8 relative">
       <AlertDescription>{message}</AlertDescription>
@@ -182,7 +201,18 @@ const ProximityAlert = ({ message, onDismiss }) => {
 };
 
 // Alerts container
-const AlertsContainer = ({ alerts, onDismiss }) => {
+interface AlertProps {
+  id: number;
+  message: string;
+  timestamp: number;
+}
+
+interface AlertsContainerProps {
+  alerts: AlertProps[];
+  onDismiss: (id: number) => void;
+}
+
+const AlertsContainer = ({ alerts, onDismiss }: AlertsContainerProps) => {
   return (
     <div className="fixed top-4 right-4 z-50 w-80 space-y-2">
       {alerts.map((alert) => (
@@ -213,8 +243,37 @@ const MapComponent = () => {
   const [vehicles, setVehicles] = useState<VehiclePosition[]>([
     { id: "1", position: [17.132742830091999, 77.56889104945668], timestamp: "2021-10-01T12:00:00Z" },
   ]);
-  const [proximityAlerts, setProximityAlerts] = useState([]);
+  interface ProximityAlert {
+    id: number;
+    message: string;
+    timestamp: number;
+  }
+
+  const [proximityAlerts, setProximityAlerts] = useState<ProximityAlert[]>([]);
   const alertIdCounter = useRef(1);
+
+  const currentVehiclePositions = useRef<{ [key: string]: [number, number] }>({});
+
+  const checkPathIntersections = (vehicleId: string | number, start1: [number, number], end1: [number, number]) => {
+    vehicles.forEach((otherVehicle) => {
+      if (vehicleId === otherVehicle.id) return;
+
+      const start2 = otherVehicle.position; // Last known position
+      const end2 = currentVehiclePositions.current[otherVehicle.id]; // Current animated position
+
+      if (start2 && end2 && doLineSegmentsIntersect(start1, end1, start2, end2)) {
+        const alertId = alertIdCounter.current++;
+        setProximityAlerts((prev) => [
+          ...prev,
+          {
+            id: alertId,
+            message: `Path of vehicle ${vehicleId} intersects with vehicle ${otherVehicle.id}`,
+            timestamp: Date.now(),
+          },
+        ]);
+      }
+    });
+  };
 
   const customCircleIcon = new L.DivIcon({
     className: "custom-icon",
@@ -263,7 +322,7 @@ const MapComponent = () => {
     }
   };
 
-  const calculateDistance = (pos1, pos2) => {
+  const calculateDistance = (pos1: [number, number], pos2: [number, number]) => {
     const R = 6371e3; // Earth's radius in meters
     const φ1 = (pos1[0] * Math.PI) / 180;
     const φ2 = (pos2[0] * Math.PI) / 180;
@@ -488,7 +547,12 @@ const MapComponent = () => {
 
         {/* Vehicle markers from WebSocket */}
         {vehicles.map((vehicle) => (
-          <AnimatedVehicleMarker key={vehicle.id} vehicle={vehicle} icon={customCircleIcon} />
+          <AnimatedVehicleMarker
+            key={vehicle.id}
+            vehicle={vehicle}
+            icon={customCircleIcon}
+            onIntersection={checkPathIntersections}
+          />
         ))}
 
         {/* Spawned circles */}
