@@ -1,0 +1,1001 @@
+2025-01-09 11:20:30,079 - INFO - Starting zoom level 19 - 336 tiles to download
+2025-01-09 11:20:31,785 - INFO - Successfully downloaded tile: z=19, x=375110, y=242826
+2025-01-09 11:20:31,786 - INFO - Progress: 0.3% (1/336 tiles)
+2025-01-09 11:20:32,137 - INFO - Successfully downloaded tile: z=19, x=375110, y=242827
+2025-01-09 11:20:32,138 - INFO - Progress: 0.6% (2/336 tiles)
+2025-01-09 11:20:32,651 - INFO - Successfully downloaded tile: z=19, x=375110, y=242828
+2025-01-09 11:20:32,652 - INFO - Progress: 0.9% (3/336 tiles)
+2025-01-09 11:20:33,133 - INFO - Successfully downloaded tile: z=19, x=375110, y=242829
+2025-01-09 11:20:33,134 - INFO - Progress: 1.2% (4/336 tiles)
+2025-01-09 11:20:33,628 - INFO - Successfully downloaded tile: z=19, x=375110, y=242830
+2025-01-09 11:20:33,629 - INFO - Progress: 1.5% (5/336 tiles)
+2025-01-09 11:20:34,142 - INFO - Successfully downloaded tile: z=19, x=375110, y=242831
+2025-01-09 11:20:34,143 - INFO - Progress: 1.8% (6/336 tiles)
+2025-01-09 11:20:34,623 - INFO - Successfully downloaded tile: z=19, x=375110, y=242832
+2025-01-09 11:20:34,624 - INFO - Progress: 2.1% (7/336 tiles)
+2025-01-09 11:20:35,149 - INFO - Successfully downloaded tile: z=19, x=375110, y=242833
+2025-01-09 11:20:35,149 - INFO - Progress: 2.4% (8/336 tiles)
+2025-01-09 11:20:35,627 - INFO - Successfully downloaded tile: z=19, x=375110, y=242834
+2025-01-09 11:20:35,627 - INFO - Progress: 2.7% (9/336 tiles)
+2025-01-09 11:20:36,974 - INFO - Successfully downloaded tile: z=19, x=375110, y=242835
+2025-01-09 11:20:36,975 - INFO - Progress: 3.0% (10/336 tiles)
+2025-01-09 11:20:37,345 - INFO - Successfully downloaded tile: z=19, x=375110, y=242836
+2025-01-09 11:20:37,345 - INFO - Progress: 3.3% (11/336 tiles)
+2025-01-09 11:20:37,851 - INFO - Successfully downloaded tile: z=19, x=375110, y=242837
+2025-01-09 11:20:37,851 - INFO - Progress: 3.6% (12/336 tiles)
+2025-01-09 11:20:38,315 - INFO - Successfully downloaded tile: z=19, x=375110, y=242838
+2025-01-09 11:20:38,316 - INFO - Progress: 3.9% (13/336 tiles)
+2025-01-09 11:20:38,812 - INFO - Successfully downloaded tile: z=19, x=375110, y=242839
+2025-01-09 11:20:38,813 - INFO - Progress: 4.2% (14/336 tiles)
+2025-01-09 11:20:39,323 - INFO - Successfully downloaded tile: z=19, x=375110, y=242840
+2025-01-09 11:20:39,324 - INFO - Progress: 4.5% (15/336 tiles)
+2025-01-09 11:20:39,511 - INFO - Successfully downloaded tile: z=19, x=375110, y=242841
+2025-01-09 11:20:39,512 - INFO - Progress: 4.8% (16/336 tiles)
+2025-01-09 11:20:40,949 - INFO - Successfully downloaded tile: z=19, x=375110, y=242842
+2025-01-09 11:20:40,950 - INFO - Progress: 5.1% (17/336 tiles)
+2025-01-09 11:20:41,313 - INFO - Successfully downloaded tile: z=19, x=375110, y=242843
+2025-01-09 11:20:41,313 - INFO - Progress: 5.4% (18/336 tiles)
+2025-01-09 11:20:42,402 - INFO - Successfully downloaded tile: z=19, x=375110, y=242844
+2025-01-09 11:20:42,402 - INFO - Progress: 5.7% (19/336 tiles)
+2025-01-09 11:20:42,743 - INFO - Successfully downloaded tile: z=19, x=375110, y=242845
+2025-01-09 11:20:42,743 - INFO - Progress: 6.0% (20/336 tiles)
+2025-01-09 11:20:43,279 - INFO - Successfully downloaded tile: z=19, x=375110, y=242846
+2025-01-09 11:20:43,279 - INFO - Progress: 6.2% (21/336 tiles)
+2025-01-09 11:20:43,806 - INFO - Successfully downloaded tile: z=19, x=375110, y=242847
+2025-01-09 11:20:43,806 - INFO - Progress: 6.5% (22/336 tiles)
+2025-01-09 11:20:45,800 - INFO - Successfully downloaded tile: z=19, x=375110, y=242848
+2025-01-09 11:20:45,800 - INFO - Progress: 6.8% (23/336 tiles)
+2025-01-09 11:20:46,168 - INFO - Successfully downloaded tile: z=19, x=375110, y=242849
+2025-01-09 11:20:46,169 - INFO - Progress: 7.1% (24/336 tiles)
+2025-01-09 11:20:46,704 - INFO - Successfully downloaded tile: z=19, x=375110, y=242850
+2025-01-09 11:20:46,704 - INFO - Progress: 7.4% (25/336 tiles)
+2025-01-09 11:20:47,139 - INFO - Successfully downloaded tile: z=19, x=375110, y=242851
+2025-01-09 11:20:47,140 - INFO - Progress: 7.7% (26/336 tiles)
+2025-01-09 11:20:47,644 - INFO - Successfully downloaded tile: z=19, x=375110, y=242852
+2025-01-09 11:20:47,644 - INFO - Progress: 8.0% (27/336 tiles)
+2025-01-09 11:20:48,150 - INFO - Successfully downloaded tile: z=19, x=375110, y=242853
+2025-01-09 11:20:48,151 - INFO - Progress: 8.3% (28/336 tiles)
+2025-01-09 11:20:48,651 - INFO - Successfully downloaded tile: z=19, x=375110, y=242854
+2025-01-09 11:20:48,652 - INFO - Progress: 8.6% (29/336 tiles)
+2025-01-09 11:20:48,853 - INFO - Successfully downloaded tile: z=19, x=375110, y=242855
+2025-01-09 11:20:48,854 - INFO - Progress: 8.9% (30/336 tiles)
+2025-01-09 11:20:49,569 - INFO - Successfully downloaded tile: z=19, x=375110, y=242856
+2025-01-09 11:20:49,569 - INFO - Progress: 9.2% (31/336 tiles)
+2025-01-09 11:20:49,841 - INFO - Successfully downloaded tile: z=19, x=375110, y=242857
+2025-01-09 11:20:49,842 - INFO - Progress: 9.5% (32/336 tiles)
+2025-01-09 11:20:50,675 - INFO - Successfully downloaded tile: z=19, x=375110, y=242858
+2025-01-09 11:20:50,675 - INFO - Progress: 9.8% (33/336 tiles)
+2025-01-09 11:20:51,188 - INFO - Successfully downloaded tile: z=19, x=375110, y=242859
+2025-01-09 11:20:51,189 - INFO - Progress: 10.1% (34/336 tiles)
+2025-01-09 11:20:51,929 - INFO - Successfully downloaded tile: z=19, x=375110, y=242860
+2025-01-09 11:20:51,929 - INFO - Progress: 10.4% (35/336 tiles)
+2025-01-09 11:20:52,442 - INFO - Successfully downloaded tile: z=19, x=375110, y=242861
+2025-01-09 11:20:52,443 - INFO - Progress: 10.7% (36/336 tiles)
+2025-01-09 11:20:52,807 - INFO - Successfully downloaded tile: z=19, x=375110, y=242862
+2025-01-09 11:20:52,807 - INFO - Progress: 11.0% (37/336 tiles)
+2025-01-09 11:20:53,285 - INFO - Successfully downloaded tile: z=19, x=375110, y=242863
+2025-01-09 11:20:53,285 - INFO - Progress: 11.3% (38/336 tiles)
+2025-01-09 11:20:53,796 - INFO - Successfully downloaded tile: z=19, x=375110, y=242864
+2025-01-09 11:20:53,796 - INFO - Progress: 11.6% (39/336 tiles)
+2025-01-09 11:20:54,292 - INFO - Successfully downloaded tile: z=19, x=375110, y=242865
+2025-01-09 11:20:54,293 - INFO - Progress: 11.9% (40/336 tiles)
+2025-01-09 11:20:54,814 - INFO - Successfully downloaded tile: z=19, x=375110, y=242866
+2025-01-09 11:20:54,815 - INFO - Progress: 12.2% (41/336 tiles)
+2025-01-09 11:20:55,920 - INFO - Successfully downloaded tile: z=19, x=375110, y=242867
+2025-01-09 11:20:55,921 - INFO - Progress: 12.5% (42/336 tiles)
+2025-01-09 11:20:56,300 - INFO - Successfully downloaded tile: z=19, x=375111, y=242826
+2025-01-09 11:20:56,300 - INFO - Progress: 12.8% (43/336 tiles)
+2025-01-09 11:20:56,767 - INFO - Successfully downloaded tile: z=19, x=375111, y=242827
+2025-01-09 11:20:56,767 - INFO - Progress: 13.1% (44/336 tiles)
+2025-01-09 11:20:57,266 - INFO - Successfully downloaded tile: z=19, x=375111, y=242828
+2025-01-09 11:20:57,267 - INFO - Progress: 13.4% (45/336 tiles)
+2025-01-09 11:20:58,401 - INFO - Successfully downloaded tile: z=19, x=375111, y=242829
+2025-01-09 11:20:58,401 - INFO - Progress: 13.7% (46/336 tiles)
+2025-01-09 11:20:58,756 - INFO - Successfully downloaded tile: z=19, x=375111, y=242830
+2025-01-09 11:20:58,757 - INFO - Progress: 14.0% (47/336 tiles)
+2025-01-09 11:20:58,947 - INFO - Successfully downloaded tile: z=19, x=375111, y=242831
+2025-01-09 11:20:58,948 - INFO - Progress: 14.3% (48/336 tiles)
+2025-01-09 11:20:59,773 - INFO - Successfully downloaded tile: z=19, x=375111, y=242832
+2025-01-09 11:20:59,773 - INFO - Progress: 14.6% (49/336 tiles)
+2025-01-09 11:21:00,273 - INFO - Successfully downloaded tile: z=19, x=375111, y=242833
+2025-01-09 11:21:00,274 - INFO - Progress: 14.9% (50/336 tiles)
+2025-01-09 11:21:00,750 - INFO - Successfully downloaded tile: z=19, x=375111, y=242834
+2025-01-09 11:21:00,750 - INFO - Progress: 15.2% (51/336 tiles)
+2025-01-09 11:21:01,270 - INFO - Successfully downloaded tile: z=19, x=375111, y=242835
+2025-01-09 11:21:01,271 - INFO - Progress: 15.5% (52/336 tiles)
+2025-01-09 11:21:01,439 - INFO - Successfully downloaded tile: z=19, x=375111, y=242836
+2025-01-09 11:21:01,440 - INFO - Progress: 15.8% (53/336 tiles)
+2025-01-09 11:21:01,947 - INFO - Successfully downloaded tile: z=19, x=375111, y=242837
+2025-01-09 11:21:01,947 - INFO - Progress: 16.1% (54/336 tiles)
+2025-01-09 11:21:02,441 - INFO - Successfully downloaded tile: z=19, x=375111, y=242838
+2025-01-09 11:21:02,442 - INFO - Progress: 16.4% (55/336 tiles)
+2025-01-09 11:21:02,945 - INFO - Successfully downloaded tile: z=19, x=375111, y=242839
+2025-01-09 11:21:02,945 - INFO - Progress: 16.7% (56/336 tiles)
+2025-01-09 11:21:04,007 - INFO - Successfully downloaded tile: z=19, x=375111, y=242840
+2025-01-09 11:21:04,008 - INFO - Progress: 17.0% (57/336 tiles)
+2025-01-09 11:21:04,046 - INFO - Successfully downloaded tile: z=19, x=375111, y=242841
+2025-01-09 11:21:04,047 - INFO - Progress: 17.3% (58/336 tiles)
+2025-01-09 11:21:04,926 - INFO - Successfully downloaded tile: z=19, x=375111, y=242842
+2025-01-09 11:21:04,927 - INFO - Progress: 17.6% (59/336 tiles)
+2025-01-09 11:21:05,053 - INFO - Successfully downloaded tile: z=19, x=375111, y=242843
+2025-01-09 11:21:05,053 - INFO - Progress: 17.9% (60/336 tiles)
+2025-01-09 11:21:05,576 - INFO - Successfully downloaded tile: z=19, x=375111, y=242844
+2025-01-09 11:21:05,576 - INFO - Progress: 18.2% (61/336 tiles)
+2025-01-09 11:21:06,063 - INFO - Successfully downloaded tile: z=19, x=375111, y=242845
+2025-01-09 11:21:06,063 - INFO - Progress: 18.5% (62/336 tiles)
+2025-01-09 11:21:06,838 - INFO - Successfully downloaded tile: z=19, x=375111, y=242846
+2025-01-09 11:21:06,838 - INFO - Progress: 18.8% (63/336 tiles)
+2025-01-09 11:21:07,433 - INFO - Successfully downloaded tile: z=19, x=375111, y=242847
+2025-01-09 11:21:07,434 - INFO - Progress: 19.0% (64/336 tiles)
+2025-01-09 11:21:07,925 - INFO - Successfully downloaded tile: z=19, x=375111, y=242848
+2025-01-09 11:21:07,925 - INFO - Progress: 19.3% (65/336 tiles)
+2025-01-09 11:21:08,360 - INFO - Successfully downloaded tile: z=19, x=375111, y=242849
+2025-01-09 11:21:08,360 - INFO - Progress: 19.6% (66/336 tiles)
+2025-01-09 11:21:08,867 - INFO - Successfully downloaded tile: z=19, x=375111, y=242850
+2025-01-09 11:21:08,867 - INFO - Progress: 19.9% (67/336 tiles)
+2025-01-09 11:21:09,373 - INFO - Successfully downloaded tile: z=19, x=375111, y=242851
+2025-01-09 11:21:09,374 - INFO - Progress: 20.2% (68/336 tiles)
+2025-01-09 11:21:10,490 - INFO - Successfully downloaded tile: z=19, x=375111, y=242852
+2025-01-09 11:21:10,491 - INFO - Progress: 20.5% (69/336 tiles)
+2025-01-09 11:21:10,833 - INFO - Successfully downloaded tile: z=19, x=375111, y=242853
+2025-01-09 11:21:10,833 - INFO - Progress: 20.8% (70/336 tiles)
+2025-01-09 11:21:11,343 - INFO - Successfully downloaded tile: z=19, x=375111, y=242854
+2025-01-09 11:21:11,343 - INFO - Progress: 21.1% (71/336 tiles)
+2025-01-09 11:21:11,782 - INFO - Successfully downloaded tile: z=19, x=375111, y=242855
+2025-01-09 11:21:11,783 - INFO - Progress: 21.4% (72/336 tiles)
+2025-01-09 11:21:12,338 - INFO - Successfully downloaded tile: z=19, x=375111, y=242856
+2025-01-09 11:21:12,338 - INFO - Progress: 21.7% (73/336 tiles)
+2025-01-09 11:21:12,849 - INFO - Successfully downloaded tile: z=19, x=375111, y=242857
+2025-01-09 11:21:12,850 - INFO - Progress: 22.0% (74/336 tiles)
+2025-01-09 11:21:13,337 - INFO - Successfully downloaded tile: z=19, x=375111, y=242858
+2025-01-09 11:21:13,337 - INFO - Progress: 22.3% (75/336 tiles)
+2025-01-09 11:21:13,836 - INFO - Successfully downloaded tile: z=19, x=375111, y=242859
+2025-01-09 11:21:13,836 - INFO - Progress: 22.6% (76/336 tiles)
+2025-01-09 11:21:14,972 - INFO - Successfully downloaded tile: z=19, x=375111, y=242860
+2025-01-09 11:21:14,973 - INFO - Progress: 22.9% (77/336 tiles)
+2025-01-09 11:21:15,340 - INFO - Successfully downloaded tile: z=19, x=375111, y=242861
+2025-01-09 11:21:15,340 - INFO - Progress: 23.2% (78/336 tiles)
+2025-01-09 11:21:15,821 - INFO - Successfully downloaded tile: z=19, x=375111, y=242862
+2025-01-09 11:21:15,821 - INFO - Progress: 23.5% (79/336 tiles)
+2025-01-09 11:21:16,346 - INFO - Successfully downloaded tile: z=19, x=375111, y=242863
+2025-01-09 11:21:16,346 - INFO - Progress: 23.8% (80/336 tiles)
+2025-01-09 11:21:16,833 - INFO - Successfully downloaded tile: z=19, x=375111, y=242864
+2025-01-09 11:21:16,834 - INFO - Progress: 24.1% (81/336 tiles)
+2025-01-09 11:21:17,348 - INFO - Successfully downloaded tile: z=19, x=375111, y=242865
+2025-01-09 11:21:17,349 - INFO - Progress: 24.4% (82/336 tiles)
+2025-01-09 11:21:17,832 - INFO - Successfully downloaded tile: z=19, x=375111, y=242866
+2025-01-09 11:21:17,833 - INFO - Progress: 24.7% (83/336 tiles)
+2025-01-09 11:21:18,583 - INFO - Successfully downloaded tile: z=19, x=375111, y=242867
+2025-01-09 11:21:18,583 - INFO - Progress: 25.0% (84/336 tiles)
+2025-01-09 11:21:19,539 - INFO - Successfully downloaded tile: z=19, x=375112, y=242826
+2025-01-09 11:21:19,540 - INFO - Progress: 25.3% (85/336 tiles)
+2025-01-09 11:21:19,782 - INFO - Successfully downloaded tile: z=19, x=375112, y=242827
+2025-01-09 11:21:19,783 - INFO - Progress: 25.6% (86/336 tiles)
+2025-01-09 11:21:20,364 - INFO - Successfully downloaded tile: z=19, x=375112, y=242828
+2025-01-09 11:21:20,364 - INFO - Progress: 25.9% (87/336 tiles)
+2025-01-09 11:21:20,577 - INFO - Successfully downloaded tile: z=19, x=375112, y=242829
+2025-01-09 11:21:20,578 - INFO - Progress: 26.2% (88/336 tiles)
+2025-01-09 11:21:21,399 - INFO - Successfully downloaded tile: z=19, x=375112, y=242830
+2025-01-09 11:21:21,399 - INFO - Progress: 26.5% (89/336 tiles)
+2025-01-09 11:21:21,836 - INFO - Successfully downloaded tile: z=19, x=375112, y=242831
+2025-01-09 11:21:21,837 - INFO - Progress: 26.8% (90/336 tiles)
+2025-01-09 11:21:22,978 - INFO - Successfully downloaded tile: z=19, x=375112, y=242832
+2025-01-09 11:21:22,979 - INFO - Progress: 27.1% (91/336 tiles)
+2025-01-09 11:21:23,196 - INFO - Successfully downloaded tile: z=19, x=375112, y=242833
+2025-01-09 11:21:23,196 - INFO - Progress: 27.4% (92/336 tiles)
+2025-01-09 11:21:23,697 - INFO - Successfully downloaded tile: z=19, x=375112, y=242834
+2025-01-09 11:21:23,697 - INFO - Progress: 27.7% (93/336 tiles)
+2025-01-09 11:21:24,200 - INFO - Successfully downloaded tile: z=19, x=375112, y=242835
+2025-01-09 11:21:24,200 - INFO - Progress: 28.0% (94/336 tiles)
+2025-01-09 11:21:24,529 - INFO - Successfully downloaded tile: z=19, x=375112, y=242836
+2025-01-09 11:21:24,529 - INFO - Progress: 28.3% (95/336 tiles)
+2025-01-09 11:21:25,024 - INFO - Successfully downloaded tile: z=19, x=375112, y=242837
+2025-01-09 11:21:25,025 - INFO - Progress: 28.6% (96/336 tiles)
+2025-01-09 11:21:25,525 - INFO - Successfully downloaded tile: z=19, x=375112, y=242838
+2025-01-09 11:21:25,526 - INFO - Progress: 28.9% (97/336 tiles)
+2025-01-09 11:21:26,024 - INFO - Successfully downloaded tile: z=19, x=375112, y=242839
+2025-01-09 11:21:26,025 - INFO - Progress: 29.2% (98/336 tiles)
+2025-01-09 11:21:26,518 - INFO - Successfully downloaded tile: z=19, x=375112, y=242840
+2025-01-09 11:21:26,519 - INFO - Progress: 29.5% (99/336 tiles)
+2025-01-09 11:21:27,024 - INFO - Successfully downloaded tile: z=19, x=375112, y=242841
+2025-01-09 11:21:27,025 - INFO - Progress: 29.8% (100/336 tiles)
+2025-01-09 11:21:27,524 - INFO - Successfully downloaded tile: z=19, x=375112, y=242842
+2025-01-09 11:21:27,524 - INFO - Progress: 30.1% (101/336 tiles)
+2025-01-09 11:21:28,028 - INFO - Successfully downloaded tile: z=19, x=375112, y=242843
+2025-01-09 11:21:28,028 - INFO - Progress: 30.4% (102/336 tiles)
+2025-01-09 11:21:28,561 - INFO - Successfully downloaded tile: z=19, x=375112, y=242844
+2025-01-09 11:21:28,562 - INFO - Progress: 30.7% (103/336 tiles)
+2025-01-09 11:21:29,205 - INFO - Successfully downloaded tile: z=19, x=375112, y=242845
+2025-01-09 11:21:29,206 - INFO - Progress: 31.0% (104/336 tiles)
+2025-01-09 11:21:29,715 - INFO - Successfully downloaded tile: z=19, x=375112, y=242846
+2025-01-09 11:21:29,715 - INFO - Progress: 31.2% (105/336 tiles)
+2025-01-09 11:21:30,205 - INFO - Successfully downloaded tile: z=19, x=375112, y=242847
+2025-01-09 11:21:30,206 - INFO - Progress: 31.5% (106/336 tiles)
+2025-01-09 11:21:31,408 - INFO - Successfully downloaded tile: z=19, x=375112, y=242848
+2025-01-09 11:21:31,409 - INFO - Progress: 31.8% (107/336 tiles)
+2025-01-09 11:21:31,615 - INFO - Successfully downloaded tile: z=19, x=375112, y=242849
+2025-01-09 11:21:31,616 - INFO - Progress: 32.1% (108/336 tiles)
+2025-01-09 11:21:32,124 - INFO - Successfully downloaded tile: z=19, x=375112, y=242850
+2025-01-09 11:21:32,124 - INFO - Progress: 32.4% (109/336 tiles)
+2025-01-09 11:21:32,640 - INFO - Successfully downloaded tile: z=19, x=375112, y=242851
+2025-01-09 11:21:32,641 - INFO - Progress: 32.7% (110/336 tiles)
+2025-01-09 11:21:33,124 - INFO - Successfully downloaded tile: z=19, x=375112, y=242852
+2025-01-09 11:21:33,124 - INFO - Progress: 33.0% (111/336 tiles)
+2025-01-09 11:21:33,625 - INFO - Successfully downloaded tile: z=19, x=375112, y=242853
+2025-01-09 11:21:33,626 - INFO - Progress: 33.3% (112/336 tiles)
+2025-01-09 11:21:34,179 - INFO - Successfully downloaded tile: z=19, x=375112, y=242854
+2025-01-09 11:21:34,179 - INFO - Progress: 33.6% (113/336 tiles)
+2025-01-09 11:21:34,785 - INFO - Successfully downloaded tile: z=19, x=375112, y=242855
+2025-01-09 11:21:34,786 - INFO - Progress: 33.9% (114/336 tiles)
+2025-01-09 11:21:35,837 - INFO - Successfully downloaded tile: z=19, x=375112, y=242856
+2025-01-09 11:21:35,838 - INFO - Progress: 34.2% (115/336 tiles)
+2025-01-09 11:21:36,886 - INFO - Successfully downloaded tile: z=19, x=375112, y=242857
+2025-01-09 11:21:36,887 - INFO - Progress: 34.5% (116/336 tiles)
+2025-01-09 11:21:37,148 - INFO - Successfully downloaded tile: z=19, x=375112, y=242858
+2025-01-09 11:21:37,148 - INFO - Progress: 34.8% (117/336 tiles)
+2025-01-09 11:21:37,622 - INFO - Successfully downloaded tile: z=19, x=375112, y=242859
+2025-01-09 11:21:37,622 - INFO - Progress: 35.1% (118/336 tiles)
+2025-01-09 11:21:38,118 - INFO - Successfully downloaded tile: z=19, x=375112, y=242860
+2025-01-09 11:21:38,119 - INFO - Progress: 35.4% (119/336 tiles)
+2025-01-09 11:21:38,617 - INFO - Successfully downloaded tile: z=19, x=375112, y=242861
+2025-01-09 11:21:38,617 - INFO - Progress: 35.7% (120/336 tiles)
+2025-01-09 11:21:39,397 - INFO - Successfully downloaded tile: z=19, x=375112, y=242862
+2025-01-09 11:21:39,397 - INFO - Progress: 36.0% (121/336 tiles)
+2025-01-09 11:21:39,611 - INFO - Successfully downloaded tile: z=19, x=375112, y=242863
+2025-01-09 11:21:39,612 - INFO - Progress: 36.3% (122/336 tiles)
+2025-01-09 11:21:40,109 - INFO - Successfully downloaded tile: z=19, x=375112, y=242864
+2025-01-09 11:21:40,110 - INFO - Progress: 36.6% (123/336 tiles)
+2025-01-09 11:21:40,601 - INFO - Successfully downloaded tile: z=19, x=375112, y=242865
+2025-01-09 11:21:40,602 - INFO - Progress: 36.9% (124/336 tiles)
+2025-01-09 11:21:41,104 - INFO - Successfully downloaded tile: z=19, x=375112, y=242866
+2025-01-09 11:21:41,105 - INFO - Progress: 37.2% (125/336 tiles)
+2025-01-09 11:21:41,610 - INFO - Successfully downloaded tile: z=19, x=375112, y=242867
+2025-01-09 11:21:41,611 - INFO - Progress: 37.5% (126/336 tiles)
+2025-01-09 11:21:42,158 - INFO - Successfully downloaded tile: z=19, x=375113, y=242826
+2025-01-09 11:21:42,158 - INFO - Progress: 37.8% (127/336 tiles)
+2025-01-09 11:21:42,467 - INFO - Successfully downloaded tile: z=19, x=375113, y=242827
+2025-01-09 11:21:42,467 - INFO - Progress: 38.1% (128/336 tiles)
+2025-01-09 11:21:42,968 - INFO - Successfully downloaded tile: z=19, x=375113, y=242828
+2025-01-09 11:21:42,969 - INFO - Progress: 38.4% (129/336 tiles)
+2025-01-09 11:21:43,446 - INFO - Successfully downloaded tile: z=19, x=375113, y=242829
+2025-01-09 11:21:43,446 - INFO - Progress: 38.7% (130/336 tiles)
+2025-01-09 11:21:44,190 - INFO - Successfully downloaded tile: z=19, x=375113, y=242830
+2025-01-09 11:21:44,191 - INFO - Progress: 39.0% (131/336 tiles)
+2025-01-09 11:21:44,627 - INFO - Successfully downloaded tile: z=19, x=375113, y=242831
+2025-01-09 11:21:44,627 - INFO - Progress: 39.3% (132/336 tiles)
+2025-01-09 11:21:45,129 - INFO - Successfully downloaded tile: z=19, x=375113, y=242832
+2025-01-09 11:21:45,130 - INFO - Progress: 39.6% (133/336 tiles)
+2025-01-09 11:21:45,628 - INFO - Successfully downloaded tile: z=19, x=375113, y=242833
+2025-01-09 11:21:45,628 - INFO - Progress: 39.9% (134/336 tiles)
+2025-01-09 11:21:46,127 - INFO - Successfully downloaded tile: z=19, x=375113, y=242834
+2025-01-09 11:21:46,128 - INFO - Progress: 40.2% (135/336 tiles)
+2025-01-09 11:21:46,634 - INFO - Successfully downloaded tile: z=19, x=375113, y=242835
+2025-01-09 11:21:46,634 - INFO - Progress: 40.5% (136/336 tiles)
+2025-01-09 11:21:46,945 - INFO - Successfully downloaded tile: z=19, x=375113, y=242836
+2025-01-09 11:21:46,945 - INFO - Progress: 40.8% (137/336 tiles)
+2025-01-09 11:21:47,444 - INFO - Successfully downloaded tile: z=19, x=375113, y=242837
+2025-01-09 11:21:47,444 - INFO - Progress: 41.1% (138/336 tiles)
+2025-01-09 11:21:48,443 - INFO - Successfully downloaded tile: z=19, x=375113, y=242838
+2025-01-09 11:21:48,444 - INFO - Progress: 41.4% (139/336 tiles)
+2025-01-09 11:21:48,672 - INFO - Successfully downloaded tile: z=19, x=375113, y=242839
+2025-01-09 11:21:48,673 - INFO - Progress: 41.7% (140/336 tiles)
+2025-01-09 11:21:49,185 - INFO - Successfully downloaded tile: z=19, x=375113, y=242840
+2025-01-09 11:21:49,186 - INFO - Progress: 42.0% (141/336 tiles)
+2025-01-09 11:21:49,494 - INFO - Successfully downloaded tile: z=19, x=375113, y=242841
+2025-01-09 11:21:49,494 - INFO - Progress: 42.3% (142/336 tiles)
+2025-01-09 11:21:49,978 - INFO - Successfully downloaded tile: z=19, x=375113, y=242842
+2025-01-09 11:21:49,978 - INFO - Progress: 42.6% (143/336 tiles)
+2025-01-09 11:21:50,668 - INFO - Successfully downloaded tile: z=19, x=375113, y=242843
+2025-01-09 11:21:50,668 - INFO - Progress: 42.9% (144/336 tiles)
+2025-01-09 11:21:50,996 - INFO - Successfully downloaded tile: z=19, x=375113, y=242844
+2025-01-09 11:21:50,997 - INFO - Progress: 43.2% (145/336 tiles)
+2025-01-09 11:21:51,684 - INFO - Successfully downloaded tile: z=19, x=375113, y=242845
+2025-01-09 11:21:51,684 - INFO - Progress: 43.5% (146/336 tiles)
+2025-01-09 11:21:51,985 - INFO - Successfully downloaded tile: z=19, x=375113, y=242846
+2025-01-09 11:21:51,985 - INFO - Progress: 43.8% (147/336 tiles)
+2025-01-09 11:21:52,718 - INFO - Successfully downloaded tile: z=19, x=375113, y=242847
+2025-01-09 11:21:52,719 - INFO - Progress: 44.0% (148/336 tiles)
+2025-01-09 11:21:53,186 - INFO - Successfully downloaded tile: z=19, x=375113, y=242848
+2025-01-09 11:21:53,186 - INFO - Progress: 44.3% (149/336 tiles)
+2025-01-09 11:21:54,174 - INFO - Successfully downloaded tile: z=19, x=375113, y=242849
+2025-01-09 11:21:54,175 - INFO - Progress: 44.6% (150/336 tiles)
+2025-01-09 11:21:54,383 - INFO - Successfully downloaded tile: z=19, x=375113, y=242850
+2025-01-09 11:21:54,383 - INFO - Progress: 44.9% (151/336 tiles)
+2025-01-09 11:21:54,884 - INFO - Successfully downloaded tile: z=19, x=375113, y=242851
+2025-01-09 11:21:54,885 - INFO - Progress: 45.2% (152/336 tiles)
+2025-01-09 11:21:55,385 - INFO - Successfully downloaded tile: z=19, x=375113, y=242852
+2025-01-09 11:21:55,385 - INFO - Progress: 45.5% (153/336 tiles)
+2025-01-09 11:21:56,283 - INFO - Successfully downloaded tile: z=19, x=375113, y=242853
+2025-01-09 11:21:56,284 - INFO - Progress: 45.8% (154/336 tiles)
+2025-01-09 11:21:56,536 - INFO - Successfully downloaded tile: z=19, x=375113, y=242854
+2025-01-09 11:21:56,537 - INFO - Progress: 46.1% (155/336 tiles)
+2025-01-09 11:21:57,011 - INFO - Successfully downloaded tile: z=19, x=375113, y=242855
+2025-01-09 11:21:57,011 - INFO - Progress: 46.4% (156/336 tiles)
+2025-01-09 11:21:57,939 - INFO - Successfully downloaded tile: z=19, x=375113, y=242856
+2025-01-09 11:21:57,939 - INFO - Progress: 46.7% (157/336 tiles)
+2025-01-09 11:21:58,181 - INFO - Successfully downloaded tile: z=19, x=375113, y=242857
+2025-01-09 11:21:58,181 - INFO - Progress: 47.0% (158/336 tiles)
+2025-01-09 11:21:58,687 - INFO - Successfully downloaded tile: z=19, x=375113, y=242858
+2025-01-09 11:21:58,687 - INFO - Progress: 47.3% (159/336 tiles)
+2025-01-09 11:21:59,186 - INFO - Successfully downloaded tile: z=19, x=375113, y=242859
+2025-01-09 11:21:59,186 - INFO - Progress: 47.6% (160/336 tiles)
+2025-01-09 11:21:59,660 - INFO - Successfully downloaded tile: z=19, x=375113, y=242860
+2025-01-09 11:21:59,661 - INFO - Progress: 47.9% (161/336 tiles)
+2025-01-09 11:22:00,523 - INFO - Successfully downloaded tile: z=19, x=375113, y=242861
+2025-01-09 11:22:00,524 - INFO - Progress: 48.2% (162/336 tiles)
+2025-01-09 11:22:01,111 - INFO - Successfully downloaded tile: z=19, x=375113, y=242862
+2025-01-09 11:22:01,111 - INFO - Progress: 48.5% (163/336 tiles)
+2025-01-09 11:22:01,328 - INFO - Successfully downloaded tile: z=19, x=375113, y=242863
+2025-01-09 11:22:01,328 - INFO - Progress: 48.8% (164/336 tiles)
+2025-01-09 11:22:02,090 - INFO - Successfully downloaded tile: z=19, x=375113, y=242864
+2025-01-09 11:22:02,090 - INFO - Progress: 49.1% (165/336 tiles)
+2025-01-09 11:22:02,330 - INFO - Successfully downloaded tile: z=19, x=375113, y=242865
+2025-01-09 11:22:02,330 - INFO - Progress: 49.4% (166/336 tiles)
+2025-01-09 11:22:02,833 - INFO - Successfully downloaded tile: z=19, x=375113, y=242866
+2025-01-09 11:22:02,833 - INFO - Progress: 49.7% (167/336 tiles)
+2025-01-09 11:22:03,675 - INFO - Successfully downloaded tile: z=19, x=375113, y=242867
+2025-01-09 11:22:03,676 - INFO - Progress: 50.0% (168/336 tiles)
+2025-01-09 11:22:03,918 - INFO - Successfully downloaded tile: z=19, x=375114, y=242826
+2025-01-09 11:22:03,919 - INFO - Progress: 50.3% (169/336 tiles)
+2025-01-09 11:22:04,676 - INFO - Successfully downloaded tile: z=19, x=375114, y=242827
+2025-01-09 11:22:04,677 - INFO - Progress: 50.6% (170/336 tiles)
+2025-01-09 11:22:04,741 - INFO - Successfully downloaded tile: z=19, x=375114, y=242828
+2025-01-09 11:22:04,741 - INFO - Progress: 50.9% (171/336 tiles)
+2025-01-09 11:22:05,398 - INFO - Successfully downloaded tile: z=19, x=375114, y=242829
+2025-01-09 11:22:05,398 - INFO - Progress: 51.2% (172/336 tiles)
+2025-01-09 11:22:05,889 - INFO - Successfully downloaded tile: z=19, x=375114, y=242830
+2025-01-09 11:22:05,889 - INFO - Progress: 51.5% (173/336 tiles)
+2025-01-09 11:22:06,643 - INFO - Successfully downloaded tile: z=19, x=375114, y=242831
+2025-01-09 11:22:06,643 - INFO - Progress: 51.8% (174/336 tiles)
+2025-01-09 11:22:06,883 - INFO - Successfully downloaded tile: z=19, x=375114, y=242832
+2025-01-09 11:22:06,883 - INFO - Progress: 52.1% (175/336 tiles)
+2025-01-09 11:22:07,391 - INFO - Successfully downloaded tile: z=19, x=375114, y=242833
+2025-01-09 11:22:07,392 - INFO - Progress: 52.4% (176/336 tiles)
+2025-01-09 11:22:08,249 - INFO - Successfully downloaded tile: z=19, x=375114, y=242834
+2025-01-09 11:22:08,249 - INFO - Progress: 52.7% (177/336 tiles)
+2025-01-09 11:22:08,477 - INFO - Successfully downloaded tile: z=19, x=375114, y=242835
+2025-01-09 11:22:08,477 - INFO - Progress: 53.0% (178/336 tiles)
+2025-01-09 11:22:08,913 - INFO - Successfully downloaded tile: z=19, x=375114, y=242836
+2025-01-09 11:22:08,913 - INFO - Progress: 53.3% (179/336 tiles)
+2025-01-09 11:22:09,646 - INFO - Successfully downloaded tile: z=19, x=375114, y=242837
+2025-01-09 11:22:09,646 - INFO - Progress: 53.6% (180/336 tiles)
+2025-01-09 11:22:09,779 - INFO - Successfully downloaded tile: z=19, x=375114, y=242838
+2025-01-09 11:22:09,779 - INFO - Progress: 53.9% (181/336 tiles)
+2025-01-09 11:22:10,820 - INFO - Successfully downloaded tile: z=19, x=375114, y=242839
+2025-01-09 11:22:10,820 - INFO - Progress: 54.2% (182/336 tiles)
+2025-01-09 11:22:11,039 - INFO - Successfully downloaded tile: z=19, x=375114, y=242840
+2025-01-09 11:22:11,039 - INFO - Progress: 54.5% (183/336 tiles)
+2025-01-09 11:22:11,351 - INFO - Successfully downloaded tile: z=19, x=375114, y=242841
+2025-01-09 11:22:11,351 - INFO - Progress: 54.8% (184/336 tiles)
+2025-01-09 11:22:11,910 - INFO - Successfully downloaded tile: z=19, x=375114, y=242842
+2025-01-09 11:22:11,910 - INFO - Progress: 55.1% (185/336 tiles)
+2025-01-09 11:22:12,421 - INFO - Successfully downloaded tile: z=19, x=375114, y=242843
+2025-01-09 11:22:12,422 - INFO - Progress: 55.4% (186/336 tiles)
+2025-01-09 11:22:13,019 - INFO - Successfully downloaded tile: z=19, x=375114, y=242844
+2025-01-09 11:22:13,020 - INFO - Progress: 55.7% (187/336 tiles)
+2025-01-09 11:22:13,377 - INFO - Successfully downloaded tile: z=19, x=375114, y=242845
+2025-01-09 11:22:13,377 - INFO - Progress: 56.0% (188/336 tiles)
+2025-01-09 11:22:13,867 - INFO - Successfully downloaded tile: z=19, x=375114, y=242846
+2025-01-09 11:22:13,867 - INFO - Progress: 56.2% (189/336 tiles)
+2025-01-09 11:22:14,893 - INFO - Successfully downloaded tile: z=19, x=375114, y=242847
+2025-01-09 11:22:14,893 - INFO - Progress: 56.5% (190/336 tiles)
+2025-01-09 11:22:15,115 - INFO - Successfully downloaded tile: z=19, x=375114, y=242848
+2025-01-09 11:22:15,116 - INFO - Progress: 56.8% (191/336 tiles)
+2025-01-09 11:22:15,642 - INFO - Successfully downloaded tile: z=19, x=375114, y=242849
+2025-01-09 11:22:15,643 - INFO - Progress: 57.1% (192/336 tiles)
+2025-01-09 11:22:15,949 - INFO - Successfully downloaded tile: z=19, x=375114, y=242850
+2025-01-09 11:22:15,950 - INFO - Progress: 57.4% (193/336 tiles)
+2025-01-09 11:22:16,631 - INFO - Successfully downloaded tile: z=19, x=375114, y=242851
+2025-01-09 11:22:16,631 - INFO - Progress: 57.7% (194/336 tiles)
+2025-01-09 11:22:17,114 - INFO - Successfully downloaded tile: z=19, x=375114, y=242852
+2025-01-09 11:22:17,114 - INFO - Progress: 58.0% (195/336 tiles)
+2025-01-09 11:22:17,598 - INFO - Successfully downloaded tile: z=19, x=375114, y=242853
+2025-01-09 11:22:17,598 - INFO - Progress: 58.3% (196/336 tiles)
+2025-01-09 11:22:18,186 - INFO - Successfully downloaded tile: z=19, x=375114, y=242854
+2025-01-09 11:22:18,186 - INFO - Progress: 58.6% (197/336 tiles)
+2025-01-09 11:22:18,621 - INFO - Successfully downloaded tile: z=19, x=375114, y=242855
+2025-01-09 11:22:18,622 - INFO - Progress: 58.9% (198/336 tiles)
+2025-01-09 11:22:19,487 - INFO - Successfully downloaded tile: z=19, x=375114, y=242856
+2025-01-09 11:22:19,488 - INFO - Progress: 59.2% (199/336 tiles)
+2025-01-09 11:22:19,701 - INFO - Successfully downloaded tile: z=19, x=375114, y=242857
+2025-01-09 11:22:19,702 - INFO - Progress: 59.5% (200/336 tiles)
+2025-01-09 11:22:20,627 - INFO - Successfully downloaded tile: z=19, x=375114, y=242858
+2025-01-09 11:22:20,627 - INFO - Progress: 59.8% (201/336 tiles)
+2025-01-09 11:22:20,867 - INFO - Successfully downloaded tile: z=19, x=375114, y=242859
+2025-01-09 11:22:20,867 - INFO - Progress: 60.1% (202/336 tiles)
+2025-01-09 11:22:21,156 - INFO - Successfully downloaded tile: z=19, x=375114, y=242860
+2025-01-09 11:22:21,157 - INFO - Progress: 60.4% (203/336 tiles)
+2025-01-09 11:22:21,844 - INFO - Successfully downloaded tile: z=19, x=375114, y=242861
+2025-01-09 11:22:21,844 - INFO - Progress: 60.7% (204/336 tiles)
+2025-01-09 11:22:22,339 - INFO - Successfully downloaded tile: z=19, x=375114, y=242862
+2025-01-09 11:22:22,339 - INFO - Progress: 61.0% (205/336 tiles)
+2025-01-09 11:22:22,858 - INFO - Successfully downloaded tile: z=19, x=375114, y=242863
+2025-01-09 11:22:22,858 - INFO - Progress: 61.3% (206/336 tiles)
+2025-01-09 11:22:23,368 - INFO - Successfully downloaded tile: z=19, x=375114, y=242864
+2025-01-09 11:22:23,368 - INFO - Progress: 61.6% (207/336 tiles)
+2025-01-09 11:22:23,856 - INFO - Successfully downloaded tile: z=19, x=375114, y=242865
+2025-01-09 11:22:23,856 - INFO - Progress: 61.9% (208/336 tiles)
+2025-01-09 11:22:24,393 - INFO - Successfully downloaded tile: z=19, x=375114, y=242866
+2025-01-09 11:22:24,393 - INFO - Progress: 62.2% (209/336 tiles)
+2025-01-09 11:22:25,132 - INFO - Successfully downloaded tile: z=19, x=375114, y=242867
+2025-01-09 11:22:25,133 - INFO - Progress: 62.5% (210/336 tiles)
+2025-01-09 11:22:25,366 - INFO - Successfully downloaded tile: z=19, x=375115, y=242826
+2025-01-09 11:22:25,367 - INFO - Progress: 62.8% (211/336 tiles)
+2025-01-09 11:22:25,876 - INFO - Successfully downloaded tile: z=19, x=375115, y=242827
+2025-01-09 11:22:25,877 - INFO - Progress: 63.1% (212/336 tiles)
+2025-01-09 11:22:26,647 - INFO - Successfully downloaded tile: z=19, x=375115, y=242828
+2025-01-09 11:22:26,647 - INFO - Progress: 63.4% (213/336 tiles)
+2025-01-09 11:22:26,881 - INFO - Successfully downloaded tile: z=19, x=375115, y=242829
+2025-01-09 11:22:26,881 - INFO - Progress: 63.7% (214/336 tiles)
+2025-01-09 11:22:27,375 - INFO - Successfully downloaded tile: z=19, x=375115, y=242830
+2025-01-09 11:22:27,375 - INFO - Progress: 64.0% (215/336 tiles)
+2025-01-09 11:22:27,875 - INFO - Successfully downloaded tile: z=19, x=375115, y=242831
+2025-01-09 11:22:27,875 - INFO - Progress: 64.3% (216/336 tiles)
+2025-01-09 11:22:28,376 - INFO - Successfully downloaded tile: z=19, x=375115, y=242832
+2025-01-09 11:22:28,377 - INFO - Progress: 64.6% (217/336 tiles)
+2025-01-09 11:22:28,891 - INFO - Successfully downloaded tile: z=19, x=375115, y=242833
+2025-01-09 11:22:28,891 - INFO - Progress: 64.9% (218/336 tiles)
+2025-01-09 11:22:29,415 - INFO - Successfully downloaded tile: z=19, x=375115, y=242834
+2025-01-09 11:22:29,416 - INFO - Progress: 65.2% (219/336 tiles)
+2025-01-09 11:22:30,238 - INFO - Successfully downloaded tile: z=19, x=375115, y=242835
+2025-01-09 11:22:30,238 - INFO - Progress: 65.5% (220/336 tiles)
+2025-01-09 11:22:30,531 - INFO - Successfully downloaded tile: z=19, x=375115, y=242836
+2025-01-09 11:22:30,532 - INFO - Progress: 65.8% (221/336 tiles)
+2025-01-09 11:22:30,790 - INFO - Successfully downloaded tile: z=19, x=375115, y=242837
+2025-01-09 11:22:30,790 - INFO - Progress: 66.1% (222/336 tiles)
+2025-01-09 11:22:31,801 - INFO - Successfully downloaded tile: z=19, x=375115, y=242838
+2025-01-09 11:22:31,801 - INFO - Progress: 66.4% (223/336 tiles)
+2025-01-09 11:22:32,621 - INFO - Successfully downloaded tile: z=19, x=375115, y=242839
+2025-01-09 11:22:32,622 - INFO - Progress: 66.7% (224/336 tiles)
+2025-01-09 11:22:32,872 - INFO - Successfully downloaded tile: z=19, x=375115, y=242840
+2025-01-09 11:22:32,873 - INFO - Progress: 67.0% (225/336 tiles)
+2025-01-09 11:22:33,151 - INFO - Successfully downloaded tile: z=19, x=375115, y=242841
+2025-01-09 11:22:33,152 - INFO - Progress: 67.3% (226/336 tiles)
+2025-01-09 11:22:33,689 - INFO - Successfully downloaded tile: z=19, x=375115, y=242842
+2025-01-09 11:22:33,690 - INFO - Progress: 67.6% (227/336 tiles)
+2025-01-09 11:22:34,164 - INFO - Successfully downloaded tile: z=19, x=375115, y=242843
+2025-01-09 11:22:34,164 - INFO - Progress: 67.9% (228/336 tiles)
+2025-01-09 11:22:34,670 - INFO - Successfully downloaded tile: z=19, x=375115, y=242844
+2025-01-09 11:22:34,671 - INFO - Progress: 68.2% (229/336 tiles)
+2025-01-09 11:22:35,173 - INFO - Successfully downloaded tile: z=19, x=375115, y=242845
+2025-01-09 11:22:35,174 - INFO - Progress: 68.5% (230/336 tiles)
+2025-01-09 11:22:35,668 - INFO - Successfully downloaded tile: z=19, x=375115, y=242846
+2025-01-09 11:22:35,669 - INFO - Progress: 68.8% (231/336 tiles)
+2025-01-09 11:22:36,158 - INFO - Successfully downloaded tile: z=19, x=375115, y=242847
+2025-01-09 11:22:36,159 - INFO - Progress: 69.0% (232/336 tiles)
+2025-01-09 11:22:36,841 - INFO - Successfully downloaded tile: z=19, x=375115, y=242848
+2025-01-09 11:22:36,842 - INFO - Progress: 69.3% (233/336 tiles)
+2025-01-09 11:22:37,335 - INFO - Successfully downloaded tile: z=19, x=375115, y=242849
+2025-01-09 11:22:37,335 - INFO - Progress: 69.6% (234/336 tiles)
+2025-01-09 11:22:37,831 - INFO - Successfully downloaded tile: z=19, x=375115, y=242850
+2025-01-09 11:22:37,831 - INFO - Progress: 69.9% (235/336 tiles)
+2025-01-09 11:22:38,375 - INFO - Successfully downloaded tile: z=19, x=375115, y=242851
+2025-01-09 11:22:38,376 - INFO - Progress: 70.2% (236/336 tiles)
+2025-01-09 11:22:38,892 - INFO - Successfully downloaded tile: z=19, x=375115, y=242852
+2025-01-09 11:22:38,892 - INFO - Progress: 70.5% (237/336 tiles)
+2025-01-09 11:22:39,362 - INFO - Successfully downloaded tile: z=19, x=375115, y=242853
+2025-01-09 11:22:39,363 - INFO - Progress: 70.8% (238/336 tiles)
+2025-01-09 11:22:39,671 - INFO - Successfully downloaded tile: z=19, x=375115, y=242854
+2025-01-09 11:22:39,672 - INFO - Progress: 71.1% (239/336 tiles)
+2025-01-09 11:22:40,675 - INFO - Successfully downloaded tile: z=19, x=375115, y=242855
+2025-01-09 11:22:40,676 - INFO - Progress: 71.4% (240/336 tiles)
+2025-01-09 11:22:40,900 - INFO - Successfully downloaded tile: z=19, x=375115, y=242856
+2025-01-09 11:22:40,900 - INFO - Progress: 71.7% (241/336 tiles)
+2025-01-09 11:22:41,379 - INFO - Successfully downloaded tile: z=19, x=375115, y=242857
+2025-01-09 11:22:41,380 - INFO - Progress: 72.0% (242/336 tiles)
+2025-01-09 11:22:41,881 - INFO - Successfully downloaded tile: z=19, x=375115, y=242858
+2025-01-09 11:22:41,881 - INFO - Progress: 72.3% (243/336 tiles)
+2025-01-09 11:22:42,391 - INFO - Successfully downloaded tile: z=19, x=375115, y=242859
+2025-01-09 11:22:42,392 - INFO - Progress: 72.6% (244/336 tiles)
+2025-01-09 11:22:42,885 - INFO - Successfully downloaded tile: z=19, x=375115, y=242860
+2025-01-09 11:22:42,885 - INFO - Progress: 72.9% (245/336 tiles)
+2025-01-09 11:22:43,411 - INFO - Successfully downloaded tile: z=19, x=375115, y=242861
+2025-01-09 11:22:43,411 - INFO - Progress: 73.2% (246/336 tiles)
+2025-01-09 11:22:43,886 - INFO - Successfully downloaded tile: z=19, x=375115, y=242862
+2025-01-09 11:22:43,886 - INFO - Progress: 73.5% (247/336 tiles)
+2025-01-09 11:22:44,396 - INFO - Successfully downloaded tile: z=19, x=375115, y=242863
+2025-01-09 11:22:44,396 - INFO - Progress: 73.8% (248/336 tiles)
+2025-01-09 11:22:44,906 - INFO - Successfully downloaded tile: z=19, x=375115, y=242864
+2025-01-09 11:22:44,906 - INFO - Progress: 74.1% (249/336 tiles)
+2025-01-09 11:22:45,388 - INFO - Successfully downloaded tile: z=19, x=375115, y=242865
+2025-01-09 11:22:45,388 - INFO - Progress: 74.4% (250/336 tiles)
+2025-01-09 11:22:45,889 - INFO - Successfully downloaded tile: z=19, x=375115, y=242866
+2025-01-09 11:22:45,889 - INFO - Progress: 74.7% (251/336 tiles)
+2025-01-09 11:22:46,399 - INFO - Successfully downloaded tile: z=19, x=375115, y=242867
+2025-01-09 11:22:46,400 - INFO - Progress: 75.0% (252/336 tiles)
+2025-01-09 11:22:46,908 - INFO - Successfully downloaded tile: z=19, x=375116, y=242826
+2025-01-09 11:22:46,909 - INFO - Progress: 75.3% (253/336 tiles)
+2025-01-09 11:22:47,401 - INFO - Successfully downloaded tile: z=19, x=375116, y=242827
+2025-01-09 11:22:47,401 - INFO - Progress: 75.6% (254/336 tiles)
+2025-01-09 11:22:48,245 - INFO - Successfully downloaded tile: z=19, x=375116, y=242828
+2025-01-09 11:22:48,245 - INFO - Progress: 75.9% (255/336 tiles)
+2025-01-09 11:22:48,481 - INFO - Successfully downloaded tile: z=19, x=375116, y=242829
+2025-01-09 11:22:48,482 - INFO - Progress: 76.2% (256/336 tiles)
+2025-01-09 11:22:48,956 - INFO - Successfully downloaded tile: z=19, x=375116, y=242830
+2025-01-09 11:22:48,956 - INFO - Progress: 76.5% (257/336 tiles)
+2025-01-09 11:22:49,467 - INFO - Successfully downloaded tile: z=19, x=375116, y=242831
+2025-01-09 11:22:49,468 - INFO - Progress: 76.8% (258/336 tiles)
+2025-01-09 11:22:49,972 - INFO - Successfully downloaded tile: z=19, x=375116, y=242832
+2025-01-09 11:22:49,972 - INFO - Progress: 77.1% (259/336 tiles)
+2025-01-09 11:22:50,470 - INFO - Successfully downloaded tile: z=19, x=375116, y=242833
+2025-01-09 11:22:50,470 - INFO - Progress: 77.4% (260/336 tiles)
+2025-01-09 11:22:50,956 - INFO - Successfully downloaded tile: z=19, x=375116, y=242834
+2025-01-09 11:22:50,956 - INFO - Progress: 77.7% (261/336 tiles)
+2025-01-09 11:22:52,315 - INFO - Successfully downloaded tile: z=19, x=375116, y=242835
+2025-01-09 11:22:52,316 - INFO - Progress: 78.0% (262/336 tiles)
+2025-01-09 11:22:52,563 - INFO - Successfully downloaded tile: z=19, x=375116, y=242836
+2025-01-09 11:22:52,563 - INFO - Progress: 78.3% (263/336 tiles)
+2025-01-09 11:22:53,045 - INFO - Successfully downloaded tile: z=19, x=375116, y=242837
+2025-01-09 11:22:53,045 - INFO - Progress: 78.6% (264/336 tiles)
+2025-01-09 11:22:53,585 - INFO - Successfully downloaded tile: z=19, x=375116, y=242838
+2025-01-09 11:22:53,585 - INFO - Progress: 78.9% (265/336 tiles)
+2025-01-09 11:22:54,054 - INFO - Successfully downloaded tile: z=19, x=375116, y=242839
+2025-01-09 11:22:54,055 - INFO - Progress: 79.2% (266/336 tiles)
+2025-01-09 11:22:54,553 - INFO - Successfully downloaded tile: z=19, x=375116, y=242840
+2025-01-09 11:22:54,553 - INFO - Progress: 79.5% (267/336 tiles)
+2025-01-09 11:22:54,862 - INFO - Successfully downloaded tile: z=19, x=375116, y=242841
+2025-01-09 11:22:54,862 - INFO - Progress: 79.8% (268/336 tiles)
+2025-01-09 11:22:55,544 - INFO - Successfully downloaded tile: z=19, x=375116, y=242842
+2025-01-09 11:22:55,545 - INFO - Progress: 80.1% (269/336 tiles)
+2025-01-09 11:22:55,878 - INFO - Successfully downloaded tile: z=19, x=375116, y=242843
+2025-01-09 11:22:55,878 - INFO - Progress: 80.4% (270/336 tiles)
+2025-01-09 11:22:56,363 - INFO - Successfully downloaded tile: z=19, x=375116, y=242844
+2025-01-09 11:22:56,363 - INFO - Progress: 80.7% (271/336 tiles)
+2025-01-09 11:22:57,068 - INFO - Successfully downloaded tile: z=19, x=375116, y=242845
+2025-01-09 11:22:57,068 - INFO - Progress: 81.0% (272/336 tiles)
+2025-01-09 11:22:57,571 - INFO - Successfully downloaded tile: z=19, x=375116, y=242846
+2025-01-09 11:22:57,572 - INFO - Progress: 81.2% (273/336 tiles)
+2025-01-09 11:22:58,340 - INFO - Successfully downloaded tile: z=19, x=375116, y=242847
+2025-01-09 11:22:58,340 - INFO - Progress: 81.5% (274/336 tiles)
+2025-01-09 11:22:58,565 - INFO - Successfully downloaded tile: z=19, x=375116, y=242848
+2025-01-09 11:22:58,566 - INFO - Progress: 81.8% (275/336 tiles)
+2025-01-09 11:22:59,060 - INFO - Successfully downloaded tile: z=19, x=375116, y=242849
+2025-01-09 11:22:59,060 - INFO - Progress: 82.1% (276/336 tiles)
+2025-01-09 11:22:59,607 - INFO - Successfully downloaded tile: z=19, x=375116, y=242850
+2025-01-09 11:22:59,608 - INFO - Progress: 82.4% (277/336 tiles)
+2025-01-09 11:23:00,087 - INFO - Successfully downloaded tile: z=19, x=375116, y=242851
+2025-01-09 11:23:00,087 - INFO - Progress: 82.7% (278/336 tiles)
+2025-01-09 11:23:00,554 - INFO - Successfully downloaded tile: z=19, x=375116, y=242852
+2025-01-09 11:23:00,554 - INFO - Progress: 83.0% (279/336 tiles)
+2025-01-09 11:23:01,063 - INFO - Successfully downloaded tile: z=19, x=375116, y=242853
+2025-01-09 11:23:01,064 - INFO - Progress: 83.3% (280/336 tiles)
+2025-01-09 11:23:01,570 - INFO - Successfully downloaded tile: z=19, x=375116, y=242854
+2025-01-09 11:23:01,571 - INFO - Progress: 83.6% (281/336 tiles)
+2025-01-09 11:23:02,062 - INFO - Successfully downloaded tile: z=19, x=375116, y=242855
+2025-01-09 11:23:02,063 - INFO - Progress: 83.9% (282/336 tiles)
+2025-01-09 11:23:02,554 - INFO - Successfully downloaded tile: z=19, x=375116, y=242856
+2025-01-09 11:23:02,555 - INFO - Progress: 84.2% (283/336 tiles)
+2025-01-09 11:23:03,048 - INFO - Successfully downloaded tile: z=19, x=375116, y=242857
+2025-01-09 11:23:03,049 - INFO - Progress: 84.5% (284/336 tiles)
+2025-01-09 11:23:03,545 - INFO - Successfully downloaded tile: z=19, x=375116, y=242858
+2025-01-09 11:23:03,546 - INFO - Progress: 84.8% (285/336 tiles)
+2025-01-09 11:23:04,333 - INFO - Successfully downloaded tile: z=19, x=375116, y=242859
+2025-01-09 11:23:04,334 - INFO - Progress: 85.1% (286/336 tiles)
+2025-01-09 11:23:04,580 - INFO - Successfully downloaded tile: z=19, x=375116, y=242860
+2025-01-09 11:23:04,581 - INFO - Progress: 85.4% (287/336 tiles)
+2025-01-09 11:23:05,096 - INFO - Successfully downloaded tile: z=19, x=375116, y=242861
+2025-01-09 11:23:05,097 - INFO - Progress: 85.7% (288/336 tiles)
+2025-01-09 11:23:05,563 - INFO - Successfully downloaded tile: z=19, x=375116, y=242862
+2025-01-09 11:23:05,564 - INFO - Progress: 86.0% (289/336 tiles)
+2025-01-09 11:23:06,095 - INFO - Successfully downloaded tile: z=19, x=375116, y=242863
+2025-01-09 11:23:06,095 - INFO - Progress: 86.3% (290/336 tiles)
+2025-01-09 11:23:06,566 - INFO - Successfully downloaded tile: z=19, x=375116, y=242864
+2025-01-09 11:23:06,566 - INFO - Progress: 86.6% (291/336 tiles)
+2025-01-09 11:23:07,068 - INFO - Successfully downloaded tile: z=19, x=375116, y=242865
+2025-01-09 11:23:07,069 - INFO - Progress: 86.9% (292/336 tiles)
+2025-01-09 11:23:07,575 - INFO - Successfully downloaded tile: z=19, x=375116, y=242866
+2025-01-09 11:23:07,575 - INFO - Progress: 87.2% (293/336 tiles)
+2025-01-09 11:23:08,077 - INFO - Successfully downloaded tile: z=19, x=375116, y=242867
+2025-01-09 11:23:08,078 - INFO - Progress: 87.5% (294/336 tiles)
+2025-01-09 11:23:08,631 - INFO - Successfully downloaded tile: z=19, x=375117, y=242826
+2025-01-09 11:23:08,631 - INFO - Progress: 87.8% (295/336 tiles)
+2025-01-09 11:23:09,085 - INFO - Successfully downloaded tile: z=19, x=375117, y=242827
+2025-01-09 11:23:09,086 - INFO - Progress: 88.1% (296/336 tiles)
+2025-01-09 11:23:09,947 - INFO - Successfully downloaded tile: z=19, x=375117, y=242828
+2025-01-09 11:23:09,948 - INFO - Progress: 88.4% (297/336 tiles)
+2025-01-09 11:23:10,162 - INFO - Successfully downloaded tile: z=19, x=375117, y=242829
+2025-01-09 11:23:10,162 - INFO - Progress: 88.7% (298/336 tiles)
+2025-01-09 11:23:10,683 - INFO - Successfully downloaded tile: z=19, x=375117, y=242830
+2025-01-09 11:23:10,684 - INFO - Progress: 89.0% (299/336 tiles)
+2025-01-09 11:23:11,176 - INFO - Successfully downloaded tile: z=19, x=375117, y=242831
+2025-01-09 11:23:11,176 - INFO - Progress: 89.3% (300/336 tiles)
+2025-01-09 11:23:11,673 - INFO - Successfully downloaded tile: z=19, x=375117, y=242832
+2025-01-09 11:23:11,674 - INFO - Progress: 89.6% (301/336 tiles)
+2025-01-09 11:23:12,161 - INFO - Successfully downloaded tile: z=19, x=375117, y=242833
+2025-01-09 11:23:12,162 - INFO - Progress: 89.9% (302/336 tiles)
+2025-01-09 11:23:12,662 - INFO - Successfully downloaded tile: z=19, x=375117, y=242834
+2025-01-09 11:23:12,662 - INFO - Progress: 90.2% (303/336 tiles)
+2025-01-09 11:23:13,179 - INFO - Successfully downloaded tile: z=19, x=375117, y=242835
+2025-01-09 11:23:13,179 - INFO - Progress: 90.5% (304/336 tiles)
+2025-01-09 11:23:13,654 - INFO - Successfully downloaded tile: z=19, x=375117, y=242836
+2025-01-09 11:23:13,654 - INFO - Progress: 90.8% (305/336 tiles)
+2025-01-09 11:23:14,159 - INFO - Successfully downloaded tile: z=19, x=375117, y=242837
+2025-01-09 11:23:14,159 - INFO - Progress: 91.1% (306/336 tiles)
+2025-01-09 11:23:14,659 - INFO - Successfully downloaded tile: z=19, x=375117, y=242838
+2025-01-09 11:23:14,660 - INFO - Progress: 91.4% (307/336 tiles)
+2025-01-09 11:23:15,162 - INFO - Successfully downloaded tile: z=19, x=375117, y=242839
+2025-01-09 11:23:15,162 - INFO - Progress: 91.7% (308/336 tiles)
+2025-01-09 11:23:15,673 - INFO - Successfully downloaded tile: z=19, x=375117, y=242840
+2025-01-09 11:23:15,674 - INFO - Progress: 92.0% (309/336 tiles)
+2025-01-09 11:23:15,995 - INFO - Successfully downloaded tile: z=19, x=375117, y=242841
+2025-01-09 11:23:15,996 - INFO - Progress: 92.3% (310/336 tiles)
+2025-01-09 11:23:16,531 - INFO - Successfully downloaded tile: z=19, x=375117, y=242842
+2025-01-09 11:23:16,532 - INFO - Progress: 92.6% (311/336 tiles)
+2025-01-09 11:23:17,049 - INFO - Successfully downloaded tile: z=19, x=375117, y=242843
+2025-01-09 11:23:17,049 - INFO - Progress: 92.9% (312/336 tiles)
+2025-01-09 11:23:17,701 - INFO - Successfully downloaded tile: z=19, x=375117, y=242844
+2025-01-09 11:23:17,702 - INFO - Progress: 93.2% (313/336 tiles)
+2025-01-09 11:23:18,219 - INFO - Successfully downloaded tile: z=19, x=375117, y=242845
+2025-01-09 11:23:18,219 - INFO - Progress: 93.5% (314/336 tiles)
+2025-01-09 11:23:18,679 - INFO - Successfully downloaded tile: z=19, x=375117, y=242846
+2025-01-09 11:23:18,680 - INFO - Progress: 93.8% (315/336 tiles)
+2025-01-09 11:23:19,469 - INFO - Successfully downloaded tile: z=19, x=375117, y=242847
+2025-01-09 11:23:19,469 - INFO - Progress: 94.0% (316/336 tiles)
+2025-01-09 11:23:19,688 - INFO - Successfully downloaded tile: z=19, x=375117, y=242848
+2025-01-09 11:23:19,689 - INFO - Progress: 94.3% (317/336 tiles)
+2025-01-09 11:23:20,029 - INFO - Successfully downloaded tile: z=19, x=375117, y=242849
+2025-01-09 11:23:20,030 - INFO - Progress: 94.6% (318/336 tiles)
+2025-01-09 11:23:20,508 - INFO - Successfully downloaded tile: z=19, x=375117, y=242850
+2025-01-09 11:23:20,508 - INFO - Progress: 94.9% (319/336 tiles)
+2025-01-09 11:23:21,011 - INFO - Successfully downloaded tile: z=19, x=375117, y=242851
+2025-01-09 11:23:21,011 - INFO - Progress: 95.2% (320/336 tiles)
+2025-01-09 11:23:21,686 - INFO - Successfully downloaded tile: z=19, x=375117, y=242852
+2025-01-09 11:23:21,686 - INFO - Progress: 95.5% (321/336 tiles)
+2025-01-09 11:23:22,173 - INFO - Successfully downloaded tile: z=19, x=375117, y=242853
+2025-01-09 11:23:22,174 - INFO - Progress: 95.8% (322/336 tiles)
+2025-01-09 11:23:22,745 - INFO - Successfully downloaded tile: z=19, x=375117, y=242854
+2025-01-09 11:23:22,745 - INFO - Progress: 96.1% (323/336 tiles)
+2025-01-09 11:23:23,239 - INFO - Successfully downloaded tile: z=19, x=375117, y=242855
+2025-01-09 11:23:23,240 - INFO - Progress: 96.4% (324/336 tiles)
+2025-01-09 11:23:24,029 - INFO - Successfully downloaded tile: z=19, x=375117, y=242856
+2025-01-09 11:23:24,029 - INFO - Progress: 96.7% (325/336 tiles)
+2025-01-09 11:23:24,575 - INFO - Successfully downloaded tile: z=19, x=375117, y=242857
+2025-01-09 11:23:24,576 - INFO - Progress: 97.0% (326/336 tiles)
+2025-01-09 11:23:24,778 - INFO - Successfully downloaded tile: z=19, x=375117, y=242858
+2025-01-09 11:23:24,778 - INFO - Progress: 97.3% (327/336 tiles)
+2025-01-09 11:23:25,293 - INFO - Successfully downloaded tile: z=19, x=375117, y=242859
+2025-01-09 11:23:25,294 - INFO - Progress: 97.6% (328/336 tiles)
+2025-01-09 11:23:26,106 - INFO - Successfully downloaded tile: z=19, x=375117, y=242860
+2025-01-09 11:23:26,107 - INFO - Progress: 97.9% (329/336 tiles)
+2025-01-09 11:23:26,353 - INFO - Successfully downloaded tile: z=19, x=375117, y=242861
+2025-01-09 11:23:26,354 - INFO - Progress: 98.2% (330/336 tiles)
+2025-01-09 11:23:26,820 - INFO - Successfully downloaded tile: z=19, x=375117, y=242862
+2025-01-09 11:23:26,820 - INFO - Progress: 98.5% (331/336 tiles)
+2025-01-09 11:23:27,324 - INFO - Successfully downloaded tile: z=19, x=375117, y=242863
+2025-01-09 11:23:27,325 - INFO - Progress: 98.8% (332/336 tiles)
+2025-01-09 11:23:27,817 - INFO - Successfully downloaded tile: z=19, x=375117, y=242864
+2025-01-09 11:23:27,818 - INFO - Progress: 99.1% (333/336 tiles)
+2025-01-09 11:23:28,321 - INFO - Successfully downloaded tile: z=19, x=375117, y=242865
+2025-01-09 11:23:28,321 - INFO - Progress: 99.4% (334/336 tiles)
+2025-01-09 11:23:28,832 - INFO - Successfully downloaded tile: z=19, x=375117, y=242866
+2025-01-09 11:23:28,833 - INFO - Progress: 99.7% (335/336 tiles)
+2025-01-09 11:23:29,318 - INFO - Successfully downloaded tile: z=19, x=375117, y=242867
+2025-01-09 11:23:29,318 - INFO - Progress: 100.0% (336/336 tiles)
+2025-01-09 11:59:02,892 - INFO - Starting zoom level 10 - 1 tiles to download
+2025-01-09 11:59:03,951 - INFO - Successfully downloaded tile: z=10, x=732, y=474
+2025-01-09 11:59:03,951 - INFO - Progress: 100.0% (1/1 tiles)
+2025-01-09 11:59:03,951 - INFO - Starting zoom level 11 - 1 tiles to download
+2025-01-09 11:59:04,068 - INFO - Successfully downloaded tile: z=11, x=1465, y=948
+2025-01-09 11:59:04,069 - INFO - Progress: 100.0% (2/2 tiles)
+2025-01-09 11:59:04,069 - INFO - Starting zoom level 12 - 1 tiles to download
+2025-01-09 11:59:04,579 - INFO - Successfully downloaded tile: z=12, x=2930, y=1897
+2025-01-09 11:59:04,580 - INFO - Progress: 100.0% (3/3 tiles)
+2025-01-09 11:59:04,580 - INFO - Starting zoom level 13 - 1 tiles to download
+2025-01-09 11:59:05,638 - INFO - Successfully downloaded tile: z=13, x=5861, y=3794
+2025-01-09 11:59:05,638 - INFO - Progress: 100.0% (4/4 tiles)
+2025-01-09 11:59:05,638 - INFO - Starting zoom level 14 - 2 tiles to download
+2025-01-09 11:59:05,725 - INFO - Successfully downloaded tile: z=14, x=11722, y=7588
+2025-01-09 11:59:05,725 - INFO - Progress: 83.3% (5/6 tiles)
+2025-01-09 11:59:06,570 - INFO - Successfully downloaded tile: z=14, x=11722, y=7589
+2025-01-09 11:59:06,570 - INFO - Progress: 100.0% (6/6 tiles)
+2025-01-09 11:59:06,570 - INFO - Starting zoom level 15 - 4 tiles to download
+2025-01-09 11:59:06,728 - INFO - Successfully downloaded tile: z=15, x=23444, y=15176
+2025-01-09 11:59:06,728 - INFO - Progress: 70.0% (7/10 tiles)
+2025-01-09 11:59:07,246 - INFO - Successfully downloaded tile: z=15, x=23444, y=15177
+2025-01-09 11:59:07,246 - INFO - Progress: 80.0% (8/10 tiles)
+2025-01-09 11:59:07,993 - INFO - Successfully downloaded tile: z=15, x=23444, y=15178
+2025-01-09 11:59:07,993 - INFO - Progress: 90.0% (9/10 tiles)
+2025-01-09 11:59:08,393 - INFO - Successfully downloaded tile: z=15, x=23444, y=15179
+2025-01-09 11:59:08,393 - INFO - Progress: 100.0% (10/10 tiles)
+2025-01-09 11:59:08,393 - INFO - Starting zoom level 16 - 12 tiles to download
+2025-01-09 11:59:08,731 - INFO - Successfully downloaded tile: z=16, x=46888, y=30353
+2025-01-09 11:59:08,731 - INFO - Progress: 50.0% (11/22 tiles)
+2025-01-09 11:59:09,268 - INFO - Successfully downloaded tile: z=16, x=46888, y=30354
+2025-01-09 11:59:09,268 - INFO - Progress: 54.5% (12/22 tiles)
+2025-01-09 11:59:09,703 - INFO - Successfully downloaded tile: z=16, x=46888, y=30355
+2025-01-09 11:59:09,703 - INFO - Progress: 59.1% (13/22 tiles)
+2025-01-09 11:59:10,191 - INFO - Successfully downloaded tile: z=16, x=46888, y=30356
+2025-01-09 11:59:10,192 - INFO - Progress: 63.6% (14/22 tiles)
+2025-01-09 11:59:10,696 - INFO - Successfully downloaded tile: z=16, x=46888, y=30357
+2025-01-09 11:59:10,697 - INFO - Progress: 68.2% (15/22 tiles)
+2025-01-09 11:59:11,221 - INFO - Successfully downloaded tile: z=16, x=46888, y=30358
+2025-01-09 11:59:11,221 - INFO - Progress: 72.7% (16/22 tiles)
+2025-01-09 11:59:11,693 - INFO - Successfully downloaded tile: z=16, x=46889, y=30353
+2025-01-09 11:59:11,693 - INFO - Progress: 77.3% (17/22 tiles)
+2025-01-09 11:59:12,275 - INFO - Successfully downloaded tile: z=16, x=46889, y=30354
+2025-01-09 11:59:12,276 - INFO - Progress: 81.8% (18/22 tiles)
+2025-01-09 11:59:12,764 - INFO - Successfully downloaded tile: z=16, x=46889, y=30355
+2025-01-09 11:59:12,764 - INFO - Progress: 86.4% (19/22 tiles)
+2025-01-09 11:59:13,203 - INFO - Successfully downloaded tile: z=16, x=46889, y=30356
+2025-01-09 11:59:13,203 - INFO - Progress: 90.9% (20/22 tiles)
+2025-01-09 11:59:13,743 - INFO - Successfully downloaded tile: z=16, x=46889, y=30357
+2025-01-09 11:59:13,743 - INFO - Progress: 95.5% (21/22 tiles)
+2025-01-09 11:59:14,201 - INFO - Successfully downloaded tile: z=16, x=46889, y=30358
+2025-01-09 11:59:14,201 - INFO - Progress: 100.0% (22/22 tiles)
+2025-01-09 11:59:14,201 - INFO - Starting zoom level 17 - 33 tiles to download
+2025-01-09 11:59:14,702 - INFO - Successfully downloaded tile: z=17, x=93777, y=60706
+2025-01-09 11:59:14,702 - INFO - Progress: 41.8% (23/55 tiles)
+2025-01-09 11:59:15,215 - INFO - Successfully downloaded tile: z=17, x=93777, y=60707
+2025-01-09 11:59:15,215 - INFO - Progress: 43.6% (24/55 tiles)
+2025-01-09 11:59:15,771 - INFO - Successfully downloaded tile: z=17, x=93777, y=60708
+2025-01-09 11:59:15,771 - INFO - Progress: 45.5% (25/55 tiles)
+2025-01-09 11:59:16,202 - INFO - Successfully downloaded tile: z=17, x=93777, y=60709
+2025-01-09 11:59:16,202 - INFO - Progress: 47.3% (26/55 tiles)
+2025-01-09 11:59:16,887 - INFO - Successfully downloaded tile: z=17, x=93777, y=60710
+2025-01-09 11:59:16,887 - INFO - Progress: 49.1% (27/55 tiles)
+2025-01-09 11:59:17,233 - INFO - Successfully downloaded tile: z=17, x=93777, y=60711
+2025-01-09 11:59:17,233 - INFO - Progress: 50.9% (28/55 tiles)
+2025-01-09 11:59:17,750 - INFO - Successfully downloaded tile: z=17, x=93777, y=60712
+2025-01-09 11:59:17,750 - INFO - Progress: 52.7% (29/55 tiles)
+2025-01-09 11:59:18,223 - INFO - Successfully downloaded tile: z=17, x=93777, y=60713
+2025-01-09 11:59:18,223 - INFO - Progress: 54.5% (30/55 tiles)
+2025-01-09 11:59:18,733 - INFO - Successfully downloaded tile: z=17, x=93777, y=60714
+2025-01-09 11:59:18,733 - INFO - Progress: 56.4% (31/55 tiles)
+2025-01-09 11:59:19,309 - INFO - Successfully downloaded tile: z=17, x=93777, y=60715
+2025-01-09 11:59:19,309 - INFO - Progress: 58.2% (32/55 tiles)
+2025-01-09 11:59:21,903 - INFO - Successfully downloaded tile: z=17, x=93777, y=60716
+2025-01-09 11:59:21,903 - INFO - Progress: 60.0% (33/55 tiles)
+2025-01-09 11:59:22,257 - INFO - Successfully downloaded tile: z=17, x=93778, y=60706
+2025-01-09 11:59:22,257 - INFO - Progress: 61.8% (34/55 tiles)
+2025-01-09 11:59:22,627 - INFO - Successfully downloaded tile: z=17, x=93778, y=60707
+2025-01-09 11:59:22,627 - INFO - Progress: 63.6% (35/55 tiles)
+2025-01-09 11:59:22,957 - INFO - Successfully downloaded tile: z=17, x=93778, y=60708
+2025-01-09 11:59:22,957 - INFO - Progress: 65.5% (36/55 tiles)
+2025-01-09 11:59:23,855 - INFO - Successfully downloaded tile: z=17, x=93778, y=60709
+2025-01-09 11:59:23,856 - INFO - Progress: 67.3% (37/55 tiles)
+2025-01-09 11:59:24,045 - INFO - Successfully downloaded tile: z=17, x=93778, y=60710
+2025-01-09 11:59:24,046 - INFO - Progress: 69.1% (38/55 tiles)
+2025-01-09 11:59:24,486 - INFO - Successfully downloaded tile: z=17, x=93778, y=60711
+2025-01-09 11:59:24,487 - INFO - Progress: 70.9% (39/55 tiles)
+2025-01-09 11:59:24,963 - INFO - Successfully downloaded tile: z=17, x=93778, y=60712
+2025-01-09 11:59:24,963 - INFO - Progress: 72.7% (40/55 tiles)
+2025-01-09 11:59:25,481 - INFO - Successfully downloaded tile: z=17, x=93778, y=60713
+2025-01-09 11:59:25,481 - INFO - Progress: 74.5% (41/55 tiles)
+2025-01-09 11:59:25,985 - INFO - Successfully downloaded tile: z=17, x=93778, y=60714
+2025-01-09 11:59:25,985 - INFO - Progress: 76.4% (42/55 tiles)
+2025-01-09 11:59:26,485 - INFO - Successfully downloaded tile: z=17, x=93778, y=60715
+2025-01-09 11:59:26,485 - INFO - Progress: 78.2% (43/55 tiles)
+2025-01-09 11:59:27,249 - INFO - Successfully downloaded tile: z=17, x=93778, y=60716
+2025-01-09 11:59:27,249 - INFO - Progress: 80.0% (44/55 tiles)
+2025-01-09 11:59:27,459 - INFO - Successfully downloaded tile: z=17, x=93779, y=60706
+2025-01-09 11:59:27,459 - INFO - Progress: 81.8% (45/55 tiles)
+2025-01-09 11:59:28,239 - INFO - Successfully downloaded tile: z=17, x=93779, y=60707
+2025-01-09 11:59:28,239 - INFO - Progress: 83.6% (46/55 tiles)
+2025-01-09 11:59:28,579 - INFO - Successfully downloaded tile: z=17, x=93779, y=60708
+2025-01-09 11:59:28,580 - INFO - Progress: 85.5% (47/55 tiles)
+2025-01-09 11:59:28,994 - INFO - Successfully downloaded tile: z=17, x=93779, y=60709
+2025-01-09 11:59:28,995 - INFO - Progress: 87.3% (48/55 tiles)
+2025-01-09 11:59:29,523 - INFO - Successfully downloaded tile: z=17, x=93779, y=60710
+2025-01-09 11:59:29,523 - INFO - Progress: 89.1% (49/55 tiles)
+2025-01-09 11:59:30,065 - INFO - Successfully downloaded tile: z=17, x=93779, y=60711
+2025-01-09 11:59:30,065 - INFO - Progress: 90.9% (50/55 tiles)
+2025-01-09 11:59:30,469 - INFO - Successfully downloaded tile: z=17, x=93779, y=60712
+2025-01-09 11:59:30,470 - INFO - Progress: 92.7% (51/55 tiles)
+2025-01-09 11:59:31,015 - INFO - Successfully downloaded tile: z=17, x=93779, y=60713
+2025-01-09 11:59:31,016 - INFO - Progress: 94.5% (52/55 tiles)
+2025-01-09 11:59:31,477 - INFO - Successfully downloaded tile: z=17, x=93779, y=60714
+2025-01-09 11:59:31,478 - INFO - Progress: 96.4% (53/55 tiles)
+2025-01-09 11:59:32,022 - INFO - Successfully downloaded tile: z=17, x=93779, y=60715
+2025-01-09 11:59:32,022 - INFO - Progress: 98.2% (54/55 tiles)
+2025-01-09 11:59:32,827 - INFO - Successfully downloaded tile: z=17, x=93779, y=60716
+2025-01-09 11:59:32,828 - INFO - Progress: 100.0% (55/55 tiles)
+2025-01-09 11:59:32,829 - INFO - Starting zoom level 18 - 84 tiles to download
+2025-01-09 11:59:33,008 - INFO - Successfully downloaded tile: z=18, x=187555, y=121413
+2025-01-09 11:59:33,009 - INFO - Progress: 40.3% (56/139 tiles)
+2025-01-09 11:59:33,912 - INFO - Successfully downloaded tile: z=18, x=187555, y=121414
+2025-01-09 11:59:33,912 - INFO - Progress: 41.0% (57/139 tiles)
+2025-01-09 11:59:33,979 - INFO - Successfully downloaded tile: z=18, x=187555, y=121415
+2025-01-09 11:59:33,980 - INFO - Progress: 41.7% (58/139 tiles)
+2025-01-09 11:59:34,559 - INFO - Successfully downloaded tile: z=18, x=187555, y=121416
+2025-01-09 11:59:34,560 - INFO - Progress: 42.4% (59/139 tiles)
+2025-01-09 11:59:34,995 - INFO - Successfully downloaded tile: z=18, x=187555, y=121417
+2025-01-09 11:59:34,995 - INFO - Progress: 43.2% (60/139 tiles)
+2025-01-09 11:59:35,511 - INFO - Successfully downloaded tile: z=18, x=187555, y=121418
+2025-01-09 11:59:35,511 - INFO - Progress: 43.9% (61/139 tiles)
+2025-01-09 11:59:36,247 - INFO - Successfully downloaded tile: z=18, x=187555, y=121419
+2025-01-09 11:59:36,248 - INFO - Progress: 44.6% (62/139 tiles)
+2025-01-09 11:59:36,762 - INFO - Successfully downloaded tile: z=18, x=187555, y=121420
+2025-01-09 11:59:36,762 - INFO - Progress: 45.3% (63/139 tiles)
+2025-01-09 11:59:36,990 - INFO - Successfully downloaded tile: z=18, x=187555, y=121421
+2025-01-09 11:59:36,991 - INFO - Progress: 46.0% (64/139 tiles)
+2025-01-09 11:59:37,477 - INFO - Successfully downloaded tile: z=18, x=187555, y=121422
+2025-01-09 11:59:37,477 - INFO - Progress: 46.8% (65/139 tiles)
+2025-01-09 11:59:38,293 - INFO - Successfully downloaded tile: z=18, x=187555, y=121423
+2025-01-09 11:59:38,294 - INFO - Progress: 47.5% (66/139 tiles)
+2025-01-09 11:59:38,510 - INFO - Successfully downloaded tile: z=18, x=187555, y=121424
+2025-01-09 11:59:38,511 - INFO - Progress: 48.2% (67/139 tiles)
+2025-01-09 11:59:39,026 - INFO - Successfully downloaded tile: z=18, x=187555, y=121425
+2025-01-09 11:59:39,027 - INFO - Progress: 48.9% (68/139 tiles)
+2025-01-09 11:59:39,520 - INFO - Successfully downloaded tile: z=18, x=187555, y=121426
+2025-01-09 11:59:39,521 - INFO - Progress: 49.6% (69/139 tiles)
+2025-01-09 11:59:41,406 - INFO - Successfully downloaded tile: z=18, x=187555, y=121427
+2025-01-09 11:59:41,407 - INFO - Progress: 50.4% (70/139 tiles)
+2025-01-09 11:59:41,483 - INFO - Successfully downloaded tile: z=18, x=187555, y=121428
+2025-01-09 11:59:41,483 - INFO - Progress: 51.1% (71/139 tiles)
+2025-01-09 11:59:41,950 - INFO - Successfully downloaded tile: z=18, x=187555, y=121429
+2025-01-09 11:59:41,951 - INFO - Progress: 51.8% (72/139 tiles)
+2025-01-09 11:59:42,478 - INFO - Successfully downloaded tile: z=18, x=187555, y=121430
+2025-01-09 11:59:42,478 - INFO - Progress: 52.5% (73/139 tiles)
+2025-01-09 11:59:42,971 - INFO - Successfully downloaded tile: z=18, x=187555, y=121431
+2025-01-09 11:59:42,972 - INFO - Progress: 53.2% (74/139 tiles)
+2025-01-09 11:59:43,608 - INFO - Successfully downloaded tile: z=18, x=187555, y=121432
+2025-01-09 11:59:43,609 - INFO - Progress: 54.0% (75/139 tiles)
+2025-01-09 11:59:43,955 - INFO - Successfully downloaded tile: z=18, x=187555, y=121433
+2025-01-09 11:59:43,956 - INFO - Progress: 54.7% (76/139 tiles)
+2025-01-09 11:59:44,865 - INFO - Successfully downloaded tile: z=18, x=187556, y=121413
+2025-01-09 11:59:44,865 - INFO - Progress: 55.4% (77/139 tiles)
+2025-01-09 11:59:44,964 - INFO - Successfully downloaded tile: z=18, x=187556, y=121414
+2025-01-09 11:59:44,964 - INFO - Progress: 56.1% (78/139 tiles)
+2025-01-09 11:59:45,490 - INFO - Successfully downloaded tile: z=18, x=187556, y=121415
+2025-01-09 11:59:45,490 - INFO - Progress: 56.8% (79/139 tiles)
+2025-01-09 11:59:45,971 - INFO - Successfully downloaded tile: z=18, x=187556, y=121416
+2025-01-09 11:59:45,972 - INFO - Progress: 57.6% (80/139 tiles)
+2025-01-09 11:59:46,465 - INFO - Successfully downloaded tile: z=18, x=187556, y=121417
+2025-01-09 11:59:46,465 - INFO - Progress: 58.3% (81/139 tiles)
+2025-01-09 11:59:46,979 - INFO - Successfully downloaded tile: z=18, x=187556, y=121418
+2025-01-09 11:59:46,979 - INFO - Progress: 59.0% (82/139 tiles)
+2025-01-09 11:59:47,466 - INFO - Successfully downloaded tile: z=18, x=187556, y=121419
+2025-01-09 11:59:47,466 - INFO - Progress: 59.7% (83/139 tiles)
+2025-01-09 11:59:48,002 - INFO - Successfully downloaded tile: z=18, x=187556, y=121420
+2025-01-09 11:59:48,002 - INFO - Progress: 60.4% (84/139 tiles)
+2025-01-09 11:59:48,498 - INFO - Successfully downloaded tile: z=18, x=187556, y=121421
+2025-01-09 11:59:48,499 - INFO - Progress: 61.2% (85/139 tiles)
+2025-01-09 11:59:48,991 - INFO - Successfully downloaded tile: z=18, x=187556, y=121422
+2025-01-09 11:59:48,992 - INFO - Progress: 61.9% (86/139 tiles)
+2025-01-09 11:59:49,540 - INFO - Successfully downloaded tile: z=18, x=187556, y=121423
+2025-01-09 11:59:49,540 - INFO - Progress: 62.6% (87/139 tiles)
+2025-01-09 11:59:49,979 - INFO - Successfully downloaded tile: z=18, x=187556, y=121424
+2025-01-09 11:59:49,979 - INFO - Progress: 63.3% (88/139 tiles)
+2025-01-09 11:59:50,482 - INFO - Successfully downloaded tile: z=18, x=187556, y=121425
+2025-01-09 11:59:50,483 - INFO - Progress: 64.0% (89/139 tiles)
+2025-01-09 11:59:50,970 - INFO - Successfully downloaded tile: z=18, x=187556, y=121426
+2025-01-09 11:59:50,971 - INFO - Progress: 64.7% (90/139 tiles)
+2025-01-09 11:59:51,481 - INFO - Successfully downloaded tile: z=18, x=187556, y=121427
+2025-01-09 11:59:51,481 - INFO - Progress: 65.5% (91/139 tiles)
+2025-01-09 11:59:51,970 - INFO - Successfully downloaded tile: z=18, x=187556, y=121428
+2025-01-09 11:59:51,970 - INFO - Progress: 66.2% (92/139 tiles)
+2025-01-09 11:59:52,478 - INFO - Successfully downloaded tile: z=18, x=187556, y=121429
+2025-01-09 11:59:52,478 - INFO - Progress: 66.9% (93/139 tiles)
+2025-01-09 11:59:52,972 - INFO - Successfully downloaded tile: z=18, x=187556, y=121430
+2025-01-09 11:59:52,973 - INFO - Progress: 67.6% (94/139 tiles)
+2025-01-09 11:59:53,630 - INFO - Successfully downloaded tile: z=18, x=187556, y=121431
+2025-01-09 11:59:53,630 - INFO - Progress: 68.3% (95/139 tiles)
+2025-01-09 11:59:54,245 - INFO - Successfully downloaded tile: z=18, x=187556, y=121432
+2025-01-09 11:59:54,245 - INFO - Progress: 69.1% (96/139 tiles)
+2025-01-09 11:59:54,483 - INFO - Successfully downloaded tile: z=18, x=187556, y=121433
+2025-01-09 11:59:54,484 - INFO - Progress: 69.8% (97/139 tiles)
+2025-01-09 11:59:55,167 - INFO - Successfully downloaded tile: z=18, x=187557, y=121413
+2025-01-09 11:59:55,167 - INFO - Progress: 70.5% (98/139 tiles)
+2025-01-09 11:59:55,479 - INFO - Successfully downloaded tile: z=18, x=187557, y=121414
+2025-01-09 11:59:55,479 - INFO - Progress: 71.2% (99/139 tiles)
+2025-01-09 11:59:56,010 - INFO - Successfully downloaded tile: z=18, x=187557, y=121415
+2025-01-09 11:59:56,011 - INFO - Progress: 71.9% (100/139 tiles)
+2025-01-09 11:59:56,533 - INFO - Successfully downloaded tile: z=18, x=187557, y=121416
+2025-01-09 11:59:56,534 - INFO - Progress: 72.7% (101/139 tiles)
+2025-01-09 11:59:57,010 - INFO - Successfully downloaded tile: z=18, x=187557, y=121417
+2025-01-09 11:59:57,011 - INFO - Progress: 73.4% (102/139 tiles)
+2025-01-09 11:59:57,548 - INFO - Successfully downloaded tile: z=18, x=187557, y=121418
+2025-01-09 11:59:57,548 - INFO - Progress: 74.1% (103/139 tiles)
+2025-01-09 11:59:57,993 - INFO - Successfully downloaded tile: z=18, x=187557, y=121419
+2025-01-09 11:59:57,994 - INFO - Progress: 74.8% (104/139 tiles)
+2025-01-09 11:59:58,734 - INFO - Successfully downloaded tile: z=18, x=187557, y=121420
+2025-01-09 11:59:58,735 - INFO - Progress: 75.5% (105/139 tiles)
+2025-01-09 11:59:59,004 - INFO - Successfully downloaded tile: z=18, x=187557, y=121421
+2025-01-09 11:59:59,005 - INFO - Progress: 76.3% (106/139 tiles)
+2025-01-09 11:59:59,492 - INFO - Successfully downloaded tile: z=18, x=187557, y=121422
+2025-01-09 11:59:59,493 - INFO - Progress: 77.0% (107/139 tiles)
+2025-01-09 12:00:00,158 - INFO - Successfully downloaded tile: z=18, x=187557, y=121423
+2025-01-09 12:00:00,159 - INFO - Progress: 77.7% (108/139 tiles)
+2025-01-09 12:00:00,502 - INFO - Successfully downloaded tile: z=18, x=187557, y=121424
+2025-01-09 12:00:00,503 - INFO - Progress: 78.4% (109/139 tiles)
+2025-01-09 12:00:01,026 - INFO - Successfully downloaded tile: z=18, x=187557, y=121425
+2025-01-09 12:00:01,026 - INFO - Progress: 79.1% (110/139 tiles)
+2025-01-09 12:00:01,494 - INFO - Successfully downloaded tile: z=18, x=187557, y=121426
+2025-01-09 12:00:01,495 - INFO - Progress: 79.9% (111/139 tiles)
+2025-01-09 12:00:01,988 - INFO - Successfully downloaded tile: z=18, x=187557, y=121427
+2025-01-09 12:00:01,989 - INFO - Progress: 80.6% (112/139 tiles)
+2025-01-09 12:00:02,489 - INFO - Successfully downloaded tile: z=18, x=187557, y=121428
+2025-01-09 12:00:02,489 - INFO - Progress: 81.3% (113/139 tiles)
+2025-01-09 12:00:03,147 - INFO - Successfully downloaded tile: z=18, x=187557, y=121429
+2025-01-09 12:00:03,147 - INFO - Progress: 82.0% (114/139 tiles)
+2025-01-09 12:00:03,688 - INFO - Successfully downloaded tile: z=18, x=187557, y=121430
+2025-01-09 12:00:03,688 - INFO - Progress: 82.7% (115/139 tiles)
+2025-01-09 12:00:03,998 - INFO - Successfully downloaded tile: z=18, x=187557, y=121431
+2025-01-09 12:00:03,998 - INFO - Progress: 83.5% (116/139 tiles)
+2025-01-09 12:00:04,649 - INFO - Successfully downloaded tile: z=18, x=187557, y=121432
+2025-01-09 12:00:04,650 - INFO - Progress: 84.2% (117/139 tiles)
+2025-01-09 12:00:05,022 - INFO - Successfully downloaded tile: z=18, x=187557, y=121433
+2025-01-09 12:00:05,022 - INFO - Progress: 84.9% (118/139 tiles)
+2025-01-09 12:00:05,980 - INFO - Successfully downloaded tile: z=18, x=187558, y=121413
+2025-01-09 12:00:05,980 - INFO - Progress: 85.6% (119/139 tiles)
+2025-01-09 12:00:06,033 - INFO - Successfully downloaded tile: z=18, x=187558, y=121414
+2025-01-09 12:00:06,034 - INFO - Progress: 86.3% (120/139 tiles)
+2025-01-09 12:00:06,527 - INFO - Successfully downloaded tile: z=18, x=187558, y=121415
+2025-01-09 12:00:06,528 - INFO - Progress: 87.1% (121/139 tiles)
+2025-01-09 12:00:07,086 - INFO - Successfully downloaded tile: z=18, x=187558, y=121416
+2025-01-09 12:00:07,087 - INFO - Progress: 87.8% (122/139 tiles)
+2025-01-09 12:00:07,549 - INFO - Successfully downloaded tile: z=18, x=187558, y=121417
+2025-01-09 12:00:07,549 - INFO - Progress: 88.5% (123/139 tiles)
+2025-01-09 12:00:08,093 - INFO - Successfully downloaded tile: z=18, x=187558, y=121418
+2025-01-09 12:00:08,093 - INFO - Progress: 89.2% (124/139 tiles)
+2025-01-09 12:00:08,537 - INFO - Successfully downloaded tile: z=18, x=187558, y=121419
+2025-01-09 12:00:08,537 - INFO - Progress: 89.9% (125/139 tiles)
+2025-01-09 12:00:09,277 - INFO - Successfully downloaded tile: z=18, x=187558, y=121420
+2025-01-09 12:00:09,277 - INFO - Progress: 90.6% (126/139 tiles)
+2025-01-09 12:00:09,538 - INFO - Successfully downloaded tile: z=18, x=187558, y=121421
+2025-01-09 12:00:09,539 - INFO - Progress: 91.4% (127/139 tiles)
+2025-01-09 12:00:10,038 - INFO - Successfully downloaded tile: z=18, x=187558, y=121422
+2025-01-09 12:00:10,039 - INFO - Progress: 92.1% (128/139 tiles)
+2025-01-09 12:00:10,558 - INFO - Successfully downloaded tile: z=18, x=187558, y=121423
+2025-01-09 12:00:10,558 - INFO - Progress: 92.8% (129/139 tiles)
+2025-01-09 12:00:11,045 - INFO - Successfully downloaded tile: z=18, x=187558, y=121424
+2025-01-09 12:00:11,045 - INFO - Progress: 93.5% (130/139 tiles)
+2025-01-09 12:00:11,527 - INFO - Successfully downloaded tile: z=18, x=187558, y=121425
+2025-01-09 12:00:11,527 - INFO - Progress: 94.2% (131/139 tiles)
+2025-01-09 12:00:12,067 - INFO - Successfully downloaded tile: z=18, x=187558, y=121426
+2025-01-09 12:00:12,068 - INFO - Progress: 95.0% (132/139 tiles)
+2025-01-09 12:00:12,553 - INFO - Successfully downloaded tile: z=18, x=187558, y=121427
+2025-01-09 12:00:12,554 - INFO - Progress: 95.7% (133/139 tiles)
+2025-01-09 12:00:13,057 - INFO - Successfully downloaded tile: z=18, x=187558, y=121428
+2025-01-09 12:00:13,058 - INFO - Progress: 96.4% (134/139 tiles)
+2025-01-09 12:00:13,527 - INFO - Successfully downloaded tile: z=18, x=187558, y=121429
+2025-01-09 12:00:13,528 - INFO - Progress: 97.1% (135/139 tiles)
+2025-01-09 12:00:14,504 - INFO - Successfully downloaded tile: z=18, x=187558, y=121430
+2025-01-09 12:00:14,505 - INFO - Progress: 97.8% (136/139 tiles)
+2025-01-09 12:00:14,862 - INFO - Successfully downloaded tile: z=18, x=187558, y=121431
+2025-01-09 12:00:14,863 - INFO - Progress: 98.6% (137/139 tiles)
+2025-01-09 12:00:15,394 - INFO - Successfully downloaded tile: z=18, x=187558, y=121432
+2025-01-09 12:00:15,394 - INFO - Progress: 99.3% (138/139 tiles)
+2025-01-09 12:00:15,572 - INFO - Successfully downloaded tile: z=18, x=187558, y=121433
+2025-01-09 12:00:15,572 - INFO - Progress: 100.0% (139/139 tiles)
+2025-01-09 12:00:15,573 - INFO - Starting zoom level 19 - 336 tiles to download
+2025-01-09 12:04:28,870 - INFO - Starting zoom level 0 - 1 tiles to download
+2025-01-09 12:04:31,498 - INFO - Successfully downloaded tile: z=0, x=0, y=0
+2025-01-09 12:04:31,499 - INFO - Progress: 100.0% (1/1 tiles)
+2025-01-09 12:04:31,500 - INFO - Starting zoom level 1 - 1 tiles to download
+2025-01-09 12:04:32,267 - INFO - Successfully downloaded tile: z=1, x=1, y=0
+2025-01-09 12:04:32,268 - INFO - Progress: 100.0% (2/2 tiles)
+2025-01-09 12:04:32,268 - INFO - Starting zoom level 2 - 1 tiles to download
+2025-01-09 12:04:32,317 - INFO - Successfully downloaded tile: z=2, x=2, y=1
+2025-01-09 12:04:32,317 - INFO - Progress: 100.0% (3/3 tiles)
+2025-01-09 12:04:32,318 - INFO - Starting zoom level 3 - 1 tiles to download
+2025-01-09 12:04:32,823 - INFO - Successfully downloaded tile: z=3, x=5, y=3
+2025-01-09 12:04:32,823 - INFO - Progress: 100.0% (4/4 tiles)
+2025-01-09 12:04:32,824 - INFO - Starting zoom level 4 - 1 tiles to download
+2025-01-09 12:04:33,337 - INFO - Successfully downloaded tile: z=4, x=11, y=7
+2025-01-09 12:04:33,337 - INFO - Progress: 100.0% (5/5 tiles)
+2025-01-09 12:04:33,338 - INFO - Starting zoom level 5 - 1 tiles to download
+2025-01-09 12:04:33,872 - INFO - Successfully downloaded tile: z=5, x=22, y=14
+2025-01-09 12:04:33,873 - INFO - Progress: 100.0% (6/6 tiles)
+2025-01-09 12:04:33,873 - INFO - Starting zoom level 6 - 1 tiles to download
+2025-01-09 12:04:34,366 - INFO - Successfully downloaded tile: z=6, x=45, y=29
+2025-01-09 12:04:34,366 - INFO - Progress: 100.0% (7/7 tiles)
+2025-01-09 12:04:34,367 - INFO - Starting zoom level 7 - 1 tiles to download
+2025-01-09 12:04:34,854 - INFO - Successfully downloaded tile: z=7, x=91, y=59
+2025-01-09 12:04:34,855 - INFO - Progress: 100.0% (8/8 tiles)
+2025-01-09 12:04:34,855 - INFO - Starting zoom level 8 - 1 tiles to download
+2025-01-09 12:04:35,340 - INFO - Successfully downloaded tile: z=8, x=183, y=118
+2025-01-09 12:04:35,340 - INFO - Progress: 100.0% (9/9 tiles)
+2025-01-09 12:04:35,340 - INFO - Starting zoom level 9 - 1 tiles to download
+2025-01-09 12:04:35,887 - INFO - Successfully downloaded tile: z=9, x=366, y=237
+2025-01-09 12:04:35,887 - INFO - Progress: 100.0% (10/10 tiles)
+2025-01-09 12:04:35,887 - INFO - Starting zoom level 10 - 1 tiles to download
+2025-01-09 12:04:35,888 - INFO - Starting zoom level 11 - 1 tiles to download
+2025-01-09 12:04:35,888 - INFO - Starting zoom level 12 - 1 tiles to download
+2025-01-09 12:04:35,888 - INFO - Starting zoom level 13 - 1 tiles to download
+2025-01-09 12:04:35,889 - INFO - Starting zoom level 14 - 2 tiles to download
+2025-01-09 12:04:35,889 - INFO - Starting zoom level 15 - 4 tiles to download
+2025-01-09 12:04:35,889 - INFO - Starting zoom level 16 - 12 tiles to download
+2025-01-09 12:04:35,890 - INFO - Starting zoom level 17 - 33 tiles to download
+2025-01-09 12:04:35,893 - INFO - Starting zoom level 18 - 84 tiles to download
+2025-01-09 12:04:35,900 - INFO - Starting zoom level 19 - 336 tiles to download
